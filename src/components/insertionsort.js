@@ -15,8 +15,13 @@
 
     is a single element by itself inherently sorted?  
     what are we doing with the unsorted portion? how do we insert them into the sorted portion?
+    how do we compare it to the sorted section? can we sort it backwards? How does that work? how do we move backwards? 
+    what determines the correct position? the unsorted element is greater than or less than the sorted elemtns. shift the sorted lements one psotion to right to make space. shifting continues until. 
 
-    
+    what is the time complexity? space complexity? why? 
+
+
+
 
 
 
@@ -25,8 +30,31 @@
 
 function insertionSort (arr){
 
+    //start sorting by looping through, but start at one because first element is already considered sorted 
+    for ( let i = 1; i < arr.length; i++ ) {
+       //take where we are at in the array and store it in the current element
+        let currentElement = arr[i];
 
+        //create the compairson ability for the current element to the most recent sorted element 
 
+        let j = i -1;
 
+        //if the most recent sorted element is greater than the current element than we need to move it to right  to make space for current element. We need to loop through the sorted . Rememebr your edge case.
 
+        while(j >=0 && arr[j] > currentElement) {
+            //move the j to the right
+            arr[j+ 1] = arr[j];
+            //move to next comparison for the sorted to the current element 
+            j--
+        }
+
+        //if the current elmeent is greater than the sorted element we are comparing to, we add one index to the sorted area and store the current element there. 
+        arr[j+ 1] = currentElement;
+    }
+    return arr;
 }
+
+
+
+
+
