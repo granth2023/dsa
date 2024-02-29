@@ -12,6 +12,8 @@
     how would you code? 
     
 
+    what is the time complexity? what is the space complexity? what is the stability? what is the type? 
+
 
 
 </h2>
