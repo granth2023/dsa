@@ -5,8 +5,13 @@
 
     what is a swap counter? it increments when you compare adjacent values. if it stays at zero then we're there.  
 
-    how does it detect completion 
+    how does it detect completion/
 
+    why ever use it? 
+
+    how would you code? 
     
+
+
 
 </h2>
