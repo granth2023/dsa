@@ -54,7 +54,10 @@ function insertionSort (arr){
     return arr;
 }
 
-
+const myArray = [22, 11, 99, 88, 9, 7, 42];
+console.log("Original array:", myArray);
+insertionSort(myArray);
+console.log("Sorted array:", myArray);
 
 
 
