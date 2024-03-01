@@ -34,6 +34,7 @@ why multiple when we iterate through a for every item in a
 so is it arr a times arr a or arr squared?
 what do we do with the b  array? do we add that? what is the abstraciton? 
 
+third example of this multiply runtimes 
 
 
 what are dropping non dominant terms? 

@@ -73,7 +73,16 @@ today we will learn to read that
 we want to read it because it is how computer memory represents data -- at its core 
 if we can begin to understand the foudnation of the computer, we can work our way up from the bottom. 
 so
+
+
+
 binary numbers 
+very low level 
+what are base numbers? what is a base number?  what do we use? 10? does a computer use basenumbers to encode into binary? 
+
+what is hexadecimal? Is it a layer above base number? is it a higher level? can you code more into hexadecimal? what is under teh hood? is it binary? 
+
+
 
 // think of it as directing 
 directing is a perfomrance - teaching-- explain-- director 
