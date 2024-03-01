@@ -78,10 +78,6 @@ so
 
 binary numbers 
 very low level 
-what are base numbers? what is a base number?  what do we use? 10? does a computer use basenumbers to encode into binary? 
-
-what is hexadecimal? Is it a layer above base number? is it a higher level? can you code more into hexadecimal? what is under teh hood? is it binary? 
-
 
 
 // think of it as directing 
@@ -192,3 +188,115 @@ where is base-2?
 
 
 </h2>
+
+
+<p>
+what are base numbers? what is a base number?  what do we use? 10? does a computer use basenumbers to encode into binary? 
+
+what is hexadecimal? Is it a layer above base number? is it a higher level? can you code more into hexadecimal? what is under teh hood? is it binary? 
+
+what are binary numbers? what base do they use? 
+
+what is the base 2 numeral 
+
+does it start at 1? or zero? 
+
+what is 10 to the 1 or 3. 
+
+how do we think about 128 in base ten 
+
+how do we make sense of 128? does our brain create shortcuts? 
+
+are there mulitple ways to get to 128? 
+
+
+why 100's tens' 10'
+
+what is `0 to zero`
+
+what is base 2? is that how binary works? is it liek base ten? 
+does this ring a bell in terms of the number? 
+
+if we have base 2 with 8 places we have 128! 
+
+128 is the large value? what is value of adding up this whole byte?255
+
+are we using binary? no 
+
+what are the two values in binary? 
+what are each of the values called? 
+what are 8 of those called? 
+
+zero values is zero value? 
+a zero value would be what? would it be eight zeroes? 
+how does it interpret 129? 1000001
+
+why do we use this? 
+is this how computers work ?
+is it for memeory management? 
+
+what is hspapening when we write javascript? what is happening in computer? what happens in the hardware? what ais a transistor? 
+
+what does a button click do? is there binary? 
+
+why vinyl? 
+
+what else is binary used for? 
+
+what does 10.0.119.42 look like? 
+
+go to 127.9.1.8000
+
+how do we add it up? remeber base-2
+
+what is a character set? 
+what is the encoding of our html? 
+
+ascii 
+
+what is hexadecimal? waht is base 16 
+
+how does base 16 use binary at lower level? 
+
+how does it work? 
+
+how many bits are repped in base 16
+
+what is 17 in hexadeciaml 
+
+you're cutting it into 4ths. 
+
+what would would it look like in binary? how would we get to get it to 1 instead of 4, what woudl our base has to be ? if we dont want 8, what if we want to go into more of an abstraction. 
+
+how would we get it? 
+
+what if we dont wnat to do base 2 what if we dont want 8 
+
+what is 9 in binary? seven zeroes and a one. in hexadeecimal its 01 
+
+02 in hexdeicaml is 0010
+
+how do we get to 9 in hexidecimal? 
+so hexideciaml is 4 bits
+
+why do we need hexadecimal? smaller values larger numbers
+location, wifi, bluetooth, hexdecimal to represent in less space 
+
+error codes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+</div>
