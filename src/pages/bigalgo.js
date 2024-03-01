@@ -1,5 +1,12 @@
 <h2>
 
+level up: 
+example one: what is the time complexity? you have a sum of the array at each index then for each element you're mulitplying that so its o(n)? why? 
+
+two: loop in a loop that expotential!! 
+three: careful, two arary so they multiple so thats n times m 
+
+four is the the same
     what is equivalent ot O(N)
     o(2n)
 what are all the terms for classifciation? what is time complexity? what is space complexity?
@@ -11,14 +18,22 @@ what is O (n)?
 what is o1? 
 how do you describe the nature of space taken up in a computer and the size of data? 
 
-What is factorial complexity? 
 
-what is power of 2 complexity? 
+
+What is factorial complexity? 
+what is is ti called hwen every solution must be correctly outputed to be determined? what is an example of this? 
+
+if it takes 1 second for 100 items? how long? 
+
+
+what is power of 2 complexity? (O(2^N))
+what is power of two? how does input affect? what is a fibonacci? 
 
 what is log linear complexity? 
-
+how does input grow? what are sorts for this? merge? time? heap? if it takes 1 item 1 second, 100 items? 300 seconds
 what are runtimes? 
 what is a multi part algo? how does it deal with multiple data sets? do we add or multiply runtimes? when? 
+the more data you ahve, the longer it iwll take to run the log 
 
 why add them if its a do this then wehn done do that
 
