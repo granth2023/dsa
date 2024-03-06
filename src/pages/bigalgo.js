@@ -138,6 +138,44 @@ how do we achieve a goal or solve? show oven
 
 Emre lecture
 
+what is an algo? why a series of steps? how do we use big o? on it? 
+
+what makes an algo inefficient? does a loop help? 
+
+worst caase scenario while making a pie? checking oven? 
+
+what are different types of Big O? 
+
+what is most efficeint? what amkes o1 the most? 
+what about o log n ? 
+
+what happens when you increase in put data? 
+
+what is cracking the code? 
+
+what does big o concern itsle with? 
+
+what is the big o? 
+
+what is the big o for the function? 
+how long does a function to run? 
+what are measuring? how long does it take? how much spacae does it take? 
+
+why does big o matter? what do we want tos ay about our code 
+
+what is the worst case scenario? 
+
+what is the best case scenario expressed as? 
+
+what is expected case? what are sorting and search algo? 
+
+are mergre sort data sort out of date? are they good way of testing ability of engineer? 
+
+are there libaries that do this stuff? is search writing normal for early engineer? 
+
+what is worst case? 
+
+
 
 
 </h2>
