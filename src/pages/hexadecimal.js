@@ -1,6 +1,40 @@
+<h2>
+
+1 1, 1 1 0, 0 0 1
+
+what number is this? 
+hint: its not 11 million 110 thousand one
+
+Tools to know -- goal for this class 
+
+WHY BINARY? WHAT BINARY? 
+zeroes and ones --very low level - javascript is abstracted out of that so we are zooming all the way in and seeing what the computer is doing explain why
+if car is software development then the front end is the design and the backend is in the sturcutre, the compartmentalizing and setting up all that structure then under the hood is the binary 
+
+we're going to be learning a different number system -- not hte metric system, but the binary system. but first before we go to the land of computers where they measure things in zeroes and ones
+
+lets get on the same page with our system -- 
+--write 128 on the board--
+--can anyone tell me what base system ours is in? I'll give you a hint -- binary is base 2 -- ours is what? 
+when do we cahnge over into a new thing? 
+
+lets break this down
+100 20  8 
+
+ones tens hundreds
+this is base ten, wvery time we hit ten, we go to a new spot
+
+so if its base 10 how would we write in exponent? 
+
+how do we get ones in ten? 
+10 to zero right. lets just remember 
 
 
-<h2> 
+
+
+
+
+
     how does 16 base work? 
 
     how does 0 in hexadecmial and binary work? what is 0? 
@@ -36,9 +70,7 @@ which is 2 to 45,6,7,
 
 so it would be 
 
-1 1 1 1 0 0 0 1
 
-what number is this? 
 
 why do we do this? 
 hexadecimal makes binary nums more human dreadbale? 
