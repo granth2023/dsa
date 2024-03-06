@@ -136,4 +136,8 @@ what are alogirithms
 how do we achieve a goal or solve? show oven 
 
 
+Emre lecture
+
+
+
 </h2>

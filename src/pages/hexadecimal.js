@@ -11,6 +11,10 @@ WHY BINARY? WHAT BINARY?
 zeroes and ones --very low level - javascript is abstracted out of that so we are zooming all the way in and seeing what the computer is doing explain why
 if car is software development then the front end is the design and the backend is in the sturcutre, the compartmentalizing and setting up all that structure then under the hood is the binary 
 
+go to the ryan reynolds
+
+
+
 we're going to be learning a different number system -- not hte metric system, but the binary system. but first before we go to the land of computers where they measure things in zeroes and ones
 
 lets get on the same page with our system -- 
@@ -28,8 +32,140 @@ so if its base 10 how would we write in exponent?
 
 how do we get ones in ten? 
 10 to zero right. lets just remember 
+that equals ones
+so how many of those do we need? 
+8
+how many times do we need the number 10? 
+twice right? 
+what about 100? 
+^^^^ reverse  
+so 450
+4 100 2 
+5 ten to ones 
+and zero ten to zero  
+
+cool so base-2 
+
+zero and one 
+
+so instead of 10 
+
+we have 2
+
+cross that out
 
 
+so how do we get to 128 in base-2? well luckily 2 to 7th is 128 
+
+what does the base number represent? it represents how many digits are avaialble in the system? in ours there is 10. zero through. 
+
+in binary its zero or one
+
+
+so go back to 128 
+base 10
+
+we have 8 of these
+2 of these, 
+1 of these
+
+and we can use 8 and 2 because they live within the 10 possibilites 
+
+but in binary we only have zero or 1 
+
+so how can we write 128 in binary? 
+
+how many two to zero do we need? 
+how many 
+how many
+all the way
+until 
+2 to the 7
+
+so now we have 1 2 8 
+
+now 128 is really good because it shows us a memory unit in computer. 
+
+these 8 digits are what we call a byte   -- gig a byte -- mega byte tera 
+each one of these is a bit 
+
+so this is 128
+
+what would 43 be
+ill help-- 128, 64, 32, 16, 8,4 2, 1, 
+
+ip addresses. right
+127.0.0.1  
+so each of these is a 4 bytes sperated by a dot. so how many bits? 
+
+whats the most that be repped? 
+
+do you want this value or not? 
+
+so how woudl you do 10.0.119.42
+
+if each of these 4 is a byte
+how do we write that 
+
+character sets? 
+
+
+okay! so onto hexadecimal 
+
+now 8 is 8 bits is a lot thats a ton. and thats just for numbers under 255 so is there another base? 
+
+well what is if we did base 16
+that's hexadecimal
+so thats all the numbers from base 10 but we need 6 unique characters? letters 
+
+so in these 16  as it relates to binary 
+
+16 0 is still 1 so how do we represnt 1 in binary 
+
+so in 16 to zero and one and two
+so 16 to zero is 1 
+
+so in binary that would be seven zeroes and and a one 
+
+how do we get 16
+
+16 to the one 
+
+or in binary 
+
+thats' 2 to the four 
+00010000
+
+so we need a short hand 
+
+what's 17 in binary? 
+
+itd be nice not to have to write out 8 digits 
+
+itd be nice if we could just do 75 percent less  
+
+this si hexidcecimal 
+
+its representing a byte in a quarter 
+
+so what base do we need to just do 1 number  
+instead of 0001001 
+what base do we need to represnt this in 2 numbers ???????
+
+so 1 in hexadecimal and binary 
+
+how many 16 to the zero do we need ? to get to 2 -- we need 2 
+
+what about 9? what aout 10? A 
+
+how do we represent the number 10 in hexdecimal and binary? 
+
+
+so back to the beginning
+11110001
+that's 241
+
+what would it be hexdecimal 
 
 
 
