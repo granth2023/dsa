@@ -187,10 +187,10 @@ where is base-2?
 
 
 
-</h2>
 
 
-<p>
+
+
 what are base numbers? what is a base number?  what do we use? 10? does a computer use basenumbers to encode into binary? 
 
 what is hexadecimal? Is it a layer above base number? is it a higher level? can you code more into hexadecimal? what is under teh hood? is it binary? 
@@ -297,6 +297,4 @@ error codes
 
 
 
-</p>
-
-</div>
+</h2>
