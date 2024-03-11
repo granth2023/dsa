@@ -175,6 +175,17 @@ are there libaries that do this stuff? is search writing normal for early engine
 
 what is worst case? 
 
+what is constnat complexity? what is an example? how many input, does it matter? 
+what is a queue? first in first out? why is it 01? is it always the same ? 
+what about stack? top? 
+what is the time it takes n to do? 
+
+whats an example? 
+
+does it matter how large array is? 
+
+what is o of n complexity 
+what happens to size of time as input goes? 
 
 
 
