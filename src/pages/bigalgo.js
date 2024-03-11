@@ -187,6 +187,58 @@ does it matter how large array is?
 what is o of n complexity 
 what happens to size of time as input goes? 
 
+what happens to time as input increases? 
+
+what are examples? is it efficent? does it increase? what is a whiteboard? 
+
+how do we show it? what do two arrays show us? what is worst case scenario? what if random number is 10 million on large array as opposed to just 2 numbers? 
+
+when we find smallest or largest number, which is slower? we loops through it and have 2 conditions or 2 for reach methods? which is slower? 
+2 loops with 1 line each or 1 loop with 2 lines? 
+
+why do both have same efficency? why do htye scale the same way? 
+
+what is logathrimithic? 
+
+is this realisitic? is this like serach algo? can anyone think of exmaple? is it a guess a number game? what ist he main feature of this? 
+
+what does the code look like?
+
+increment j -- with each iteration we reduce it by half? 
+
+half and half and half
+
+
+what is o n squared 
+
+is it efficent? 
+
+what is the processing time effects? 
+
+what would you have to do to 2 loops for it to be quadratic? how would you nest loops? would it be quadratic? should you run loops within loops? if you don't know how many times, it will be quadratic? 
+
+what is nested? array? within array? two loops? that is increasing complexity  
+
+IS CODE GOOD? You good, code? 
+
+what is run time for this? is it bad if the nested has only one value? 
+
+but what if its not? 
+
+what is the larger input mean? 
+can you do it in sperate loops and do seperate function? what would an alternative be? 
+
+can you put a limit on it? 
+
+--
+
+
+
+
+
+
+
 
 
 </h2>
+
