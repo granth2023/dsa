@@ -38,7 +38,7 @@ function mergeSort(arr) {
         //store results
         const result = [];
 
-        while(leftArr.lenght && rightArr.length){
+        while(leftArr.length && rightArr.length){
             if(leftArr[0]<= rightArr[0]){
                 result.push(leftArr.shift())
 

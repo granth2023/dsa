@@ -67,3 +67,8 @@ let n = arr.length;
 quickSort(arr, 0, n-1);
 console.log("Sorted array: ");
 console.log(arr);
+
+
+//so in this we have a function swap, partition, , quick sort
+
+//what does swpa do? it passes the array, and two variables i and j. we are passing them all through on one another storing them wihtin, why? why are we doing this? probably because the item are not in the right spot. what does partition do? it has an array, and low and high number -- we have a variable called pivot of array at the high number, we have a i variable that is lower than a low number,  

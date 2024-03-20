@@ -14,6 +14,6 @@
     Why is this the worst? 
     
      What is the time complexity? What is the space complexity? What is the stability? What type of sort is this?  
-
+    whyi is it n^2 
 
 </h2>
