@@ -135,3 +135,6 @@ console.log(title)
   // Exercise 10:  Using the pre-defined variable named albumIdx below, assign the albumDetails object of the album located within the talkingHeadsAlbums array at the index represented by the value of albumIdx to a variable named albumDetails
   
   let albumIdx = 4;
+
+  albumDetails = talkingHeadsAlbums[albumIdx].albumDetails
+  console.log(albumDetails)
