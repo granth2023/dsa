@@ -50,8 +50,10 @@ console.log(title)
   
   // Exercise 4:  Update the released property of album3 from a string into a Date object using that string
   
+//  album3.albumDetails.released.setFullYear(' ')
   
-  
+// august79.setFullYear(' ')
+// console.log(august79)
   
   const album4 = {
     title: 'Remain in Light',
@@ -60,11 +62,17 @@ console.log(title)
       formats: ['Cassette', 'LP']
     }
   };
+
+
   
   // Exercise 5:  Add a property named label with the value 'Sire' to album4's albumDetails property
   
   
-  
+  album4.albumDetails.label = 'Sire'
+  album4.albumDetails.excitement = 'high'
+  album4.albumDetails.memories = 'bittersweet'
+  album4.albumDetails.lastingImpression = 'holy'
+  console.log(album4.albumDetails.lastingImpression)
   
   const album5 = {
     title: 'Little Creatures',
@@ -77,7 +85,8 @@ console.log(title)
   
   // Exercise 6:  Update the value 'emi' within album5's labels array to 'EMI'
   
-  
+ album5.albumDetails.labels[1] = 'EMI'
+ console.log(album5.albumDetails.labels[1])
   
   
   const album6 = {
@@ -90,9 +99,9 @@ console.log(title)
   };
   
   // Exercise 7:  Assign album6's formats array to a variable named formats
+  formats = album6.albumDetails.formats
   
-  
-  
+  console.log(formats)
   
   const album7 = {
     title: 'Naked',
@@ -114,7 +123,7 @@ console.log(title)
   ];
   
   // Exercise 8:  Using the talkingHeadsAlbums array, assign album5's labels property to a variable named labels
-  
+  labels = album5.albumDetails.labels
   
   
   
