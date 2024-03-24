@@ -30,16 +30,16 @@
 
 function insertionSort (arr){
 
-    //start sorting by looping through, but start at one because first element is already considered sorted 
+    //how do we insert in the loop? where do we know where to do it? 
     for ( let i = 1; i < arr.length; i++ ) {
-       //take where we are at in the array and store it in the current element
+       //how do we look at each element on its own? 
         let currentElement = arr[i];
 
-        //create the compairson ability for the current element to the most recent sorted element 
+        //we need to know where to insert, so how do we know if between two things works? 
 
         let j = i -1;
 
-        //if the most recent sorted element is greater than the current element than we need to move it to right  to make space for current element. We need to loop through the sorted . Rememebr your edge case.
+        //what do we do if the last elemeent we were looking at is greater than the current element? how do we move the j into the next index point? 
 
         while(j >=0 && arr[j] > currentElement) {
             //move the j to the right
@@ -48,11 +48,13 @@ function insertionSort (arr){
             j--
         }
 
-        //if the current elmeent is greater than the sorted element we are comparing to, we add one index to the sorted area and store the current element there. 
+        //how do we create the next comparison for arr[j] and current element? 
         arr[j+ 1] = currentElement;
     }
     return arr;
 }
+
+//To do: review this one 
 
 const myArray = [22, 11, 99, 88, 9, 7, 42];
 console.log("Original array:", myArray);

@@ -19,28 +19,28 @@
 </h2>
 
 function bubbleSort(arr) {
-    //create a swap counter   
+    //how do we keep track of how many times we swap?  
     let swapCounter;
 
     do {
-        //start the count at zero 
+        //swhat do we start the count at? 
         swapCounter = 0;
-        //start sorting through the data through the data  
+        //how do we start going through the data?   
         for ( let i = 0; i < arr.length -1; i++ ) {
 
-            // if the current number we are looped at, is greater than the next number -- 
+            //what are we comparing? 
             if( arr[i] > arr[i + 1] ) {
-                //set the current number inside the temp variable  and --
+               //how do we create the possibility of change? 
                 let temp = arr[i]
-                //set the bigger number to the location of the current number aka swap so temp
+                //what do we do with something we need to move closer to zero in the index? 
                 arr[i] = arr[i +1];
-                //goes to the place where it belongs sorted wise 
+               //how do we take the change item and put it back into the array? 
                 arr[i + 1] = temp;
-                //increase the swap counter for this occuring 
+                //if this occurs do we increment our swapcounter? 
                 swapCounter++;
             }
     }
-    //continue the looping while the counter does not equal zero
+    //how do we keep this going? what if we need to keep swapping? when do we stop swapping? 
     } while (swapCounter !== 0);
 
     return arr;
