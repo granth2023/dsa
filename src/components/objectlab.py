@@ -71,6 +71,8 @@ album5 = {
     'formats': ['CD', 'cassette', 'LP']
   }
 }
+album4['albumDetails']['label'] = 'Sire'
+print (album4['albumDetails']['label'])
 
 # Exercise 6: Update the value 'emi' within album5's labels array to 'EMI'
 
