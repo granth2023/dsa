@@ -52,6 +52,19 @@ what is stable versus unstbale? what is STABLE VERSUS unstable
   what is distrubtion? i mean use the word? how do we dsitrubte this? if you go grocery shopping and you have all the different places in your fridge and youre putting your gorceries in different things is it fair to say you're distrubitng? oyure not comparing, youre saying this thing is going into different things. 
 
   what is stable? what iS GA? I DON TUNDERSTAND STBALE VS unstable
+  so if you have mulitple search filters, sort filters ill say how would you keep the order of one of the orders? like if you had emails and youre filtering by subjects and then trying to go in date order. -- like the date is still going to matter -- the original order of the emails coming in remains the same even though theyre in a different subset subjet. realitve to subject, the date will remains the same. 
+
+  so lets say you order everything by date-- cool i have all my emails by date? 
+  but lets say i want to first order them by subject --
+  when you have everything parsed into subjects, the date wilsl still reamin right? cool. 
+
+  if you have products and you sort by price and then youre like well i want to sort by rating. its not going to retain the price because the price won't matter anymore. 
+
+  why is this importnat? 
+  you might want to maintain order -- like banking and ecommerce. 
+  when to choose? Well if oyu want to keep some sort in multiple sort filters, than you need stable. unstable? faster, less complex. 
+
+  
 
   there's selection sort, bubble, sort, merge sort 
 
