@@ -9,6 +9,7 @@ const album1 = {
   
   // Exercise 1:  Update the title property of album1 from 'Talking Heads' to 'Talking Heads - 77', then assign that property to a variable named title
 album1.title = 'TALKING HEADS 77'
+
 title =  album1.title 
   console.log(title)
   

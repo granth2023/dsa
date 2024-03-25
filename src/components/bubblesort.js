@@ -19,7 +19,7 @@
 </h2>
 
 function bubbleSort(arr) {
-    //how do we keep track of how many times we swap?  
+    //how do we keep track of how many times we swap? also we need to go through this a bunch of times and then  
     let swapCounter;
 
     do {

@@ -79,6 +79,13 @@ function logArray(arr) {
 
   What is selection sort doing, its' picking a candidate. its sayign are you the lowest number? I want to find the lowest number and I wont' decide on who the winner is until i go through everyone. then when I do decide okay great I put that and now I do it again wihtout any memory of previous! how horrible. dont want to spend time. get the stench off. 
 
+  sleeceiton sort - so iterate through the list and while you do, you store array at index into lowest value and if lowest value is greater i +1 then store i +1 into lowest vlaue 
+
+
+what is buble sort? 
+do it go to zero everytime? 
+
+create varibale for swap counter? 
 </h5>
 </div>
 
