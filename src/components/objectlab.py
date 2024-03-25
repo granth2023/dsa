@@ -85,7 +85,8 @@ album6 = {
     'formats': ['CD', 'cassette', 'LP']
   }
 }
-
+album5['albumDetails']['labels'][1] = 'EMI'
+print (album5['albumDetails']['labels'])
 # Exercise 7: Assign album6's formats array to a variable named formats
 
 # Define album7
