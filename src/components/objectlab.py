@@ -42,7 +42,10 @@ album3 = {
 }
 
 # Exercise 3: Accessing the string 'LP' from album2's formats array, add it to the end of album3's formats array.
-
+album3['albumDetails']['formats'].append('LP')
+time = album3['albumDetails']['formats']
+print (time)
+ 
 # Exercise 4: Update the released property of album3 from a string into a Date object using that string
 
 # Define album4
@@ -53,6 +56,9 @@ album4 = {
     'formats': ['Cassette', 'LP']
   }
 }
+
+album3['albumDetails']['released'] = datetime.strptime(album3['albumDetails']['released'], '%B %d, %Y')
+print (album3['albumDetails']['released'])
 
 # Exercise 5: Add a property named label with the value 'Sire' to album4's albumDetails property
 
