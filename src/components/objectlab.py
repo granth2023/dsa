@@ -98,7 +98,8 @@ album7 = {
     'formats': ['CD', 'cassette', 'LP']
   }
 }
-
+formats = album6['albumDetails']['formats']
+print(formats)
 # Create a list of albums
 talkingHeadsAlbums = [album1, album2, album3, album4, album5, album6, album7]
 
