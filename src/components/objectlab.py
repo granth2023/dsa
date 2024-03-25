@@ -107,7 +107,8 @@ talkingHeadsAlbums = [album1, album2, album3, album4, album5, album6, album7]
 labels = talkingHeadsAlbums[4]['albumDetails']['labels']
 print (labels)
 # Exercise 9: Using the talkingHeadsAlbums array, assign album7's released property to album6's released property
-
+property = talkingHeadsAlbums[6]['albumDetails']['released']
+print (property)
 # Exercise 10: Using the pre-defined variable named albumIdx below, assign the albumDetails object of the album located within the talkingHeadsAlbums array at the index represented by the value of albumIdx to a variable named albumDetails
 
 albumIdx = 4
