@@ -4,21 +4,27 @@ foods = []
 # Exercise 2: Add 'pizza' & 'cheeseburger' to the foods list
 
 foods += ['pizza', 'cheeseburger']
+foods += ['pizza', ' cheeseburger']
 print (foods)
 
 # Exercise 3: Add 'taco' to the foods list so that 'taco' is the first item
+foods.insert(0, 'taco')
 foods.insert(0, 'taco')
 print (foods)
 # Exercise 4: Access 'pizza' in the foods list and assign to a variable named favFood
 
 favFood = foods[1]
+favoFood = foods[1]
 print(favFood)
 # Exercise 5: Insert 'tofu' in the foods list between 'pizza' & 'cheeseburger'
+foods.insert(foods.index('cheeseburger'), 'tofu')
 foods.insert(foods.index('cheeseburger'), 'tofu')
 print(foods)
 
 # Exercise 6: Replace 'pizza' in the foods list with 'sushi' & 'cupcake'
 pizza_index = foods.index('pizza')
+pizza_index = foods.index('pizza')
+foods[pizza_index:pizza_index + 1] = ['sushi', 'cupcake']
 foods[pizza_index:pizza_index + 1] = ['sushi', 'cupcake']
 
 print(foods)
