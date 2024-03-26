@@ -44,7 +44,7 @@ function insertionSort (arr){
         while(j >=0 && arr[j] > currentElement) {
             //move the j to the right
             arr[j+ 1] = arr[j];
-            //move to next comparison for the sorted to the current element 
+            //why is j decremn=ented? because its inital value at one before the current elmeent we are trying to sort, meaning its at theen end of sorted section 
             j--
         }
 

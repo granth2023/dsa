@@ -46,3 +46,6 @@ function bubbleSort(arr) {
     return arr;
 
 }
+//what are the passes? its like its only comparing the next thing, so we dont know once a thing is swapped, its good! what about what's next ot it now? 
+
+// each pass increments a swap counter and then boom. if not zero send it back. 

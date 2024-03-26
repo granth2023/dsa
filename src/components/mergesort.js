@@ -55,3 +55,91 @@ function mergeSort(arr) {
 
     //to do -- break down all these arrays, then set up a cross like here are all the arrays, here are problems that go with them-- merge sort and what else? I mean merge sort? are we working our way up to merge srot? wuick sort? 
     
+
+
+    function mergeSortPhotos(photos) {
+        if (photos.length <= 1) {
+          return photos;
+        }
+      
+        // Divide the array into two halves
+        const middle = Math.floor(photos.length / 2);
+        const left = photos.slice(0, middle);
+        const right = photos.slice(middle);
+      
+        // Recursively sort each half and merge them back together
+        return merge(mergeSortPhotos(left), mergeSortPhotos(right));
+      }
+      
+      function merge(left, right) {
+        let result = [];
+        let leftIndex = 0;
+        let rightIndex = 0;
+      
+        // Compare each element of the left and right arrays and merge them into result
+        while (leftIndex < left.length && rightIndex < right.length) {
+            //we just want to put the least value in the array first 
+          if (left[leftIndex].timestamp < right[rightIndex].timestamp) {
+            result.push(left[leftIndex]);
+            leftIndex++; // Move to the next element in the left array
+          } else {
+            result.push(right[rightIndex]);
+            rightIndex++; // Move to the next element in the right array
+          }
+        }
+      
+        // If there are remaining elements in left or right arrays, add them to the result
+        //what does this line do? 
+        return result.concat(left.slice(leftIndex)).concat(right.slice(rightIndex));
+      }
+      
+      // Example usage
+      const photos = [
+        { timestamp: '2021-03-25T15:00:00Z', photoId: 1 },
+        { timestamp: '2019-06-14T09:30:00Z', photoId: 2 },
+        { timestamp: '2020-12-01T12:15:00Z', photoId: 3 },
+        { timestamp: '2018-01-20T07:45:00Z', photoId: 4 },
+        // Add more photos if needed
+      ];
+      
+      const sortedPhotos = mergeSortPhotos(photos);
+      console.log(sortedPhotos);
+      
+
+
+
+//       [ Array ]
+//       // mergeSortPhotos(array)
+//          |
+// -----------------------------------
+// |                                   |
+// [ Sub-array ]                     [ Sub-array ]
+// // mergeSortPhotos(left)          // mergeSortPhotos(right)
+// |                                   |
+// -------------                      -------------
+// |             |                    |             |
+// [Sub-sub]     [Sub-sub]            [Sub-sub]     [Sub-sub]
+// // Further recursive calls       // Further recursive calls
+// |             |                    |             |
+// -------        -------              -------        -------
+// |  |  |  |    |  |  |  |            |  |  |  |    |  |  |  |
+// [1] [1] [1] [1] [1] [1] [1] [1]    [1] [1] [1] [1] [1] [1] [1] [1]
+// -------        -------              -------        -------
+// |             |                    |             |
+// |          [ Merged ]              |          [ Merged ]
+// |        // merge(left, right)     |        // merge(left, right)
+// |    [Compare elements & swap]     |    [Compare elements & swap]
+// |             |                    |             |
+// -------------                      -------------
+// |                                   |
+// |                                [ Merged ]
+// |                             // merge(left, right)
+// |                         [Compare elements & swap]
+// |                                   |
+// -----------------------------------
+//          |
+//       [ Merged ]
+// // merge(left, right)
+// [Compare elements & swap]
+//          |
+//       [ Sorted ]
