@@ -30,13 +30,14 @@ foods[pizza_index:pizza_index + 1] = ['sushi', 'cupcake']
 print(foods)
 
 # Exercise 7: Use slice to create a new list containing 'sushi' & 'cupcake', assign to yummy
-yummy = foods[foods.index('sushi'): foods.index('tofu')]
+yummy = foods [foods.index('sushi'): foods.index('tofu')]
+
 print(yummy)
 # Exercise 8: Using indexOf, find the index of 'tofu' and assign to a variable named soyIdx
-soyIdx = foods.index('tofu')
+soyIdx = foods.indexOf['tofu']
 print (soyIdx)
 # Exercise 9: Join all items in foods into a single string, assign to allFoods
-allFoods = ' -> '.join(foods)
+allFoods = ' -> '.join
 print(allFoods)
 # Exercise 10: Check if 'soup' is in the foods list, assign result (True/False) to hasSoup
 hasSoup = 'soup' in foods
