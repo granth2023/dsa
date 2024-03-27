@@ -51,7 +51,12 @@ function multiplyArray(newNums){
 newNums = [2, 4, 5 ]
 console.log(multiplyArray(newNums))
 // Define a function, as a function expression, numArgs that returns the number of arguments passed to the function when called.
+function numArgs(){
+    
 
+    return arguments.length
+}
+console.log(numArgs('1', '3', '4', '5'))
 // Define a function, as a function declaration, reverseString that takes a string, reverses the characters, and returns it. For example, reverseString('rockstar'); would return the string "ratskcor".
 
 // Define a function, as a function expression, longestStringInArray that takes an array of strings as an argument and returns the length of the longest string.
