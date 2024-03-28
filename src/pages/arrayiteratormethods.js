@@ -41,7 +41,9 @@ const inventors = [
   // Array.prototype.reduce()
   // 5. How many years did all the inventors live?
   
-  
+  const total = 
+    inventors.reduce((curr, inventor) => curr + (inventor.passed - inventor.year), 0)
+    console.log(total)
   
   
   const people = [
@@ -63,8 +65,12 @@ const inventors = [
   // Hint: As a start, consider using the String.prototype.split method to "split" the string using ', ' as the separator
   
   
-  
-  
+  const happy = people.map((n) => {
+    const splitted = n.split(', ');
+    return [splitted[1], splitted[0]].join(' ');
+  })
+
+  console.log(happy)
   const data = [
     'car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van',
     'bike', 'walk', 'car', 'van', 'car', 'truck'
@@ -74,6 +80,7 @@ const inventors = [
   // 7. Count the number of instances for each of the data items. The reduce should return an object where the keys are 'car', 'truck', etc. and the values are the count.
   // Hint: Since you want to return an object, be sure to pass an empty {} for the initial value of the "accumulator".
   
+
   
   
   const devs = [
@@ -87,12 +94,14 @@ const inventors = [
   // 8. Check if at least one person is 19 or older?
   // Hint: To get today's year, use the getFullYear method of new Date(), i.e., new Date().getFullYear()
   
-const atLeastOne = devs.some((d) => 
+const atLeastOne = devs.some((d) => newDate().getFullYear() -  d.year >= 19)
+console.log(atLeastOne)
   // Array.prototype.every()
   // 9. Check if everyone is 19 or older?
   
 
-
+const every = devs.every((d) => newDate().getFullYear() - d.year)
+console.log(every)
   
   
   const comments = [
