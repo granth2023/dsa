@@ -24,15 +24,17 @@ const inventors = [
   // 2. Map the array of the inventors into a new array containing objects with just the first and last names as properties
   // Hint:  Return a new object literal from the callback (don't mutate the object being passed in to map)
   
-  
+  const newArray = inventors.map((i)=> i[0] && i[1])
   
   // Array.prototype.sort()
   // 3. Sort the inventors by birth date (year property), in ascending order
   
-  
+  inventors.sort()
   
   // Array.prototype.find()
   // 4. Find the inventor object with the first name of 'Ada'
+
+  inventors.find( (i) => { i.first('Ada')})
   
   
   
@@ -85,10 +87,12 @@ const inventors = [
   // 8. Check if at least one person is 19 or older?
   // Hint: To get today's year, use the getFullYear method of new Date(), i.e., new Date().getFullYear()
   
-  
+const atLeastOne = devs.some((d) => 
   // Array.prototype.every()
   // 9. Check if everyone is 19 or older?
   
+
+
   
   
   const comments = [
@@ -102,11 +106,13 @@ const inventors = [
   // Array.prototype.find()
   // 10. Find the comment with the id of 823423
   
-  
+  const targetId = comments.find((c) => c.id == 823423)
+  console.log(targetId);
   
   // Array.prototype.findIndex()
   // 11. Find the index of the comment with an id of 123523
   
-  
+ const targetIndex =  comments.findIndex((c) => c[i] == 123523)
+ console.log(targetIndex);
   
   
