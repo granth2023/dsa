@@ -1,4 +1,4 @@
-
+//callback function is what? how do we use it 
 const inventors = [
     { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 },
     { first: 'Isaac', last: 'Newton', year: 1643, passed: 1727 },
@@ -16,31 +16,32 @@ const inventors = [
   
   // Array.prototype.filter()
   // 1. Filter the array of inventors into a new array containing only the inventors born in the 1500's
-  
+  //take out everything where the year does not live within 1500's
   const sixteenCenturyBirths = inventors.filter((i) => i.year >= 1500 && i.year <= 1599);
   
   
   // Array.prototype.map()
   // 2. Map the array of the inventors into a new array containing objects with just the first and last names as properties
   // Hint:  Return a new object literal from the callback (don't mutate the object being passed in to map)
-  
-  const newArray = inventors.map((i)=> i[0] && i[1])
+  // the new data set needs to have specific properties from the keyss. 
+  const newArray = inventors.map((i)=> { return { first: i.first, last: i.last }});
   
   // Array.prototype.sort()
   // 3. Sort the inventors by birth date (year property), in ascending order
-  
-  inventors.sort()
+  //subtract one property value from another to see which is more. 
+  const sorted = inventors.sort((a,b)=> a.year - b.year);
+
   
   // Array.prototype.find()
   // 4. Find the inventor object with the first name of 'Ada'
-
-  inventors.find( (i) => { i.first('Ada')})
+//identify a specific value and the property it belongs to 
+  const ada = inventors.find( (i) => { i.first('Ada')})
   
-  
+  console.log(ada)
   
   // Array.prototype.reduce()
   // 5. How many years did all the inventors live?
-  
+ //subtract values to get a total years of each inventor and add that to a sumtotal starting at zero
   const total = 
     inventors.reduce((curr, inventor) => curr + (inventor.passed - inventor.year), 0)
     console.log(total)
@@ -64,10 +65,9 @@ const inventors = [
   // 6. Map the people array such that the new array consists of strings with the names formatted as "First Last", e.g., "Becker, Carl" should be mapped to "Carl Becker".
   // Hint: As a start, consider using the String.prototype.split method to "split" the string using ', ' as the separator
   
-  
+  //ultimately we want to join back up after we reverse and split into two strings and we are inserting this into a new array 
   const happy = people.map((n) => {
-    const splitted = n.split(', ');
-    return [splitted[1], splitted[0]].join(' ');
+    return n.split(', ').reverse().join(' ')
   })
 
   console.log(happy)
@@ -79,8 +79,16 @@ const inventors = [
   // Array.prototype.reduce()
   // 7. Count the number of instances for each of the data items. The reduce should return an object where the keys are 'car', 'truck', etc. and the values are the count.
   // Hint: Since you want to return an object, be sure to pass an empty {} for the initial value of the "accumulator".
-  
+  //create an empty object where we are going to have keys and how often the keys are mentioned from the data set. Increment if the key has been mentioned otherwise set it to one when its read .
+const vechicleTypeCounter = data.reduce((prevState, vechicleType) => {
+    if(prevState[vechicleType]){
+        prevState[vechicleType] ++;
 
+    } else {
+        prevState[vechicleType] = 1;
+    }
+    return prevState;
+}, {});
   
   
   const devs = [
@@ -93,12 +101,12 @@ const inventors = [
   // Array.prototype.some()
   // 8. Check if at least one person is 19 or older?
   // Hint: To get today's year, use the getFullYear method of new Date(), i.e., new Date().getFullYear()
-  
+//use 19 as an operator to see if the value of their year born subtracts from the current year is greater. 
 const atLeastOne = devs.some((d) => newDate().getFullYear() -  d.year >= 19)
 console.log(atLeastOne)
   // Array.prototype.every()
   // 9. Check if everyone is 19 or older?
-  
+  //same operate this time it will be ab oolean 
 
 const every = devs.every((d) => newDate().getFullYear() - d.year)
 console.log(every)
@@ -115,12 +123,14 @@ console.log(every)
   // Array.prototype.find()
   // 10. Find the comment with the id of 823423
   
+  // take the value keyed in from the property and find it. 
   const targetId = comments.find((c) => c.id == 823423)
   console.log(targetId);
   
   // Array.prototype.findIndex()
   // 11. Find the index of the comment with an id of 123523
   
+  //take a value at an array index to return the idnex 
  const targetIndex =  comments.findIndex((c) => c[i] == 123523)
  console.log(targetIndex);
   
