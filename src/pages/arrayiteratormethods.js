@@ -17,6 +17,7 @@ const inventors = [
   // Array.prototype.filter()
   // 1. Filter the array of inventors into a new array containing only the inventors born in the 1500's
   
+  const sixteenCenturyBirths = inventors.filter((i) => i.year >= 1500 && i.year <= 1599);
   
   
   // Array.prototype.map()
