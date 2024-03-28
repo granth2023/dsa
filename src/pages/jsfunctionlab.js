@@ -59,6 +59,52 @@ function numArgs(){
 console.log(numArgs('1', '3', '4', '5'))
 // Define a function, as a function declaration, reverseString that takes a string, reverses the characters, and returns it. For example, reverseString('rockstar'); would return the string "ratskcor".
 
+//split method for the type and then reverse method to manipulate the arguments and then join to complete the process. 
+
+function reverseString(s){
+        reversed = []
+        for( let i =0 ; i  > s.length; i-- ){
+            reversed.push(s[i])
+
+        }
+        reversed.join();
+        return reversed;
+}
+console.log(reverseString('rockstar'))
+
 // Define a function, as a function expression, longestStringInArray that takes an array of strings as an argument and returns the length of the longest string.
 
+// how do oyu break down a string into its characters? and then we want to count how many characters are there and we want to break those into a thing. its jsut how do oyou do that i like the logic of the has table but what are we to do with it. 
+
+function longestStringInArray(arr){
+    //hash table? 
+    comparison = arr[0];
+    for ( let i = 1; i < arr.length; i++ ){
+        //break down value into characters 
+        if(arr[i] > comparison)
+        {
+            comparison = arr[i];
+        }
+    }
+    return comparison;
+}
+
+
+
 // Define a function, as a function declaration, stringsLongerThan that takes an array of strings and a number as arguments; and returns an array of the strings that are longer than the number passed in. For example, stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3); would return ["hello", "morning"].
+
+function stringsLongerThan(arr, x){
+    //how do we get the amount of characters in a string? 
+
+    for ( let i = 0; i < arr.length; i++ ){
+        results = [];
+       newArr =  [arr[i].split("")]
+        if( newArr.length > x ){
+            
+            results.push(newArr[i].join(""));
+        }
+        return results; 
+    }
+
+
+}
