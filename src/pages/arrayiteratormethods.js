@@ -27,7 +27,9 @@ const inventors = [
   // Hint:  Return a new object literal from the callback (don't mutate the object being passed in to map)
   // the new data set needs to have specific properties from the keyss. 
   
-  
+  const names = inventors.map((inventor) => inventor.first && inventor.last)
+  //you cna't just pass this 
+  console.log(names)
   // Array.prototype.sort()
   // 3. Sort the inventors by birth date (year property), in ascending order
   //subtract one property value from another to see which is more. 
