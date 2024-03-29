@@ -67,7 +67,9 @@
 
 
 //declare and pass the specific value and where it belongs to 
-
+function binarySearch (array, x){
+    
+}
 //save the first value and the last value in the set 
 
 
