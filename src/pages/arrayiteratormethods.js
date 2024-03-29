@@ -28,12 +28,13 @@ const inventors = [
   // the new data set needs to have specific properties from the keyss. 
   
   const names = inventors.map((inventor) => inventor.first && inventor.last)
-  //you cna't just pass this 
+  //you cna't just pass this last one because both are truthy plus its not an ojbect, you need the first and last keys invovled here! 
   console.log(names)
   // Array.prototype.sort()
   // 3. Sort the inventors by birth date (year property), in ascending order
   //subtract one property value from another to see which is more. 
  
+  inventors.sort((a,b, inventor)=> ( inventor.passed - inventor.year)  )
 
   
   // Array.prototype.find()
