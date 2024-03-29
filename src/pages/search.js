@@ -105,3 +105,4 @@ if (array[midpoint] == x ) {
 }
 }
 
+// issues because you're pulling values into the variables and then just using these values and creating a broken code. Try again before moving on. 
