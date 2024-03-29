@@ -28,4 +28,10 @@ function binarySearch(){
 }
 
 
-//what are characteristic
+//what are characteristics of binary? 
+//why only to sorted? what is the big o runt ime? why is ist fast? do we do it on unsorted tacked on? 
+
+//how can we add andd delted elemnts froma sorted colelction? 
+//how do we index and serach mroe complex elemnts in a colelction? 
+//what is interpolation? 
+
