@@ -68,17 +68,29 @@
 
 //declare and pass the specific value and where it belongs to 
 function binarySearch (array, x){
-    
-}
+
+
+
+
 //save the first value and the last value in the set 
 
 
 // while our start is less than or equal to our end, we want to divide the data set in half and save that 
 
 //if the value of our midpoint is our value then we can return that midpoint
-
+if () {
+    
+}
 //if our value at midpoint is less than our value we want to look to the right of the midpoint and keep dividng 
+} else if () {
 
+}
 //if our value is greater than x we want to look to the left and resave the end value 
+} else if (){
 
+}
 //if the value is not there is the data set just give us bitwise
+} else {
+    return -1 
+}
+}
