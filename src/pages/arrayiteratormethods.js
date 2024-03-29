@@ -42,6 +42,7 @@ const inventors = [
 //identify a specific value and the property it belongs to 
 
 const ada = inventors.find( 'ada' => {first: 'ada' })
+//issue with argument, you are iterating on an array so you need to basically be calling the individual indexes and then keying into each ones specific property that is equal to the value we are looking for
   
   // console.log(ada)
   
