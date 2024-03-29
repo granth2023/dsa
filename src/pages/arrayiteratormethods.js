@@ -18,7 +18,9 @@ const inventors = [
   // 1. Filter the array of inventors into a new array containing only the inventors born in the 1500's
   //take out everything where the year does not live within 1500's
 
-  
+  const only = inventors.filter(() => inventors.year >= 1500 && inventors.passed <= 1599)
+  //why callback function? you are breaking down the inventors array into its indexes. 
+  console.log(only)
   
   // Array.prototype.map()
   // 2. Map the array of the inventors into a new array containing objects with just the first and last names as properties
@@ -37,7 +39,7 @@ const inventors = [
 //identify a specific value and the property it belongs to 
 
   
-  console.log(ada)
+  // console.log(ada)
   
   // Array.prototype.reduce()
   // 5. How many years did all the inventors live?
@@ -66,7 +68,7 @@ const inventors = [
   //ultimately we want to join back up after we reverse and split into two strings and we are inserting this into a new array 
 
 
-  console.log(happy)
+  // console.log(happy)
   const data = [
     'car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van',
     'bike', 'walk', 'car', 'van', 'car', 'truck'
@@ -91,12 +93,12 @@ const inventors = [
   // Hint: To get today's year, use the getFullYear method of new Date(), i.e., new Date().getFullYear()
 //use 19 as an operator to see if the value of their year born subtracts from the current year is greater. 
 
-console.log(atLeastOne)
+// console.log(atLeastOne)
   // Array.prototype.every()
   // 9. Check if everyone is 19 or older?
   //same operate this time it will be ab oolean 
 
-console.log(every)
+// console.log(every)
   
   
   const comments = [
@@ -112,13 +114,13 @@ console.log(every)
   
   // take the value keyed in from the property and find it. 
  
-  console.log(targetId);
+  // console.log(targetId);
   
   // Array.prototype.findIndex()
   // 11. Find the index of the comment with an id of 123523
   
   //take a value at an array index to return the idnex 
  
- console.log(targetIndex);
+//  console.log(targetIndex);
   
   
