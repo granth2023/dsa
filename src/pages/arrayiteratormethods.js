@@ -35,12 +35,13 @@ const inventors = [
   //subtract one property value from another to see which is more. 
  
   inventors.sort((a,b, inventor)=> ( inventor.passed - inventor.year)  )
-
+//reread the problem, overcomplication 
   
   // Array.prototype.find()
   // 4. Find the inventor object with the first name of 'Ada'
 //identify a specific value and the property it belongs to 
 
+const ada = inventors.find( 'ada' => {first: 'ada' })
   
   // console.log(ada)
   
