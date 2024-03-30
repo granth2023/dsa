@@ -61,7 +61,10 @@ const ada = inventors.find(inventor => inventor.first == 'Ada' )
   // 5. How many years did all the inventors live?
  //subtract values to get a total years of each inventor and add that to a sumtotal starting at zero
 
-  
+  // const yearsLived = inventors.reduce(inventor=> {
+  //   let sumTotal =
+
+  // })
   
   const people = [
     'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick', 'Beecher, Henry',
@@ -81,6 +84,10 @@ const ada = inventors.find(inventor => inventor.first == 'Ada' )
   // 6. Map the people array such that the new array consists of strings with the names formatted as "First Last", e.g., "Becker, Carl" should be mapped to "Carl Becker".
   // Hint: As a start, consider using the String.prototype.split method to "split" the string using ', ' as the separator
   
+const reorganizedNames = people.map( person => person.split(' ').reverse().join(', ')   )
+//correct!
+
+console.log(reorganizedNames)
   //ultimately we want to join back up after we reverse and split into two strings and we are inserting this into a new array 
 // const namesProper = people.map(person => split(person).reverse().join(', '));
 //the split needs the style of how its to be done, but you also need to the form to do it on. You've created the name for the indecies with your argument. 
