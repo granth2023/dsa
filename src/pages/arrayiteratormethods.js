@@ -54,7 +54,8 @@ console.log(sortedInventors)
 // const ada = inventors.find( 'ada' => {first: 'ada' })
 //issue with argument, you are iterating on an array so you need to basically be calling the individual indexes and then keying into each ones specific property that is equal to the value we are looking for
   
-  // console.log(ada)
+const ada = inventors.find(inventor => inventor.first == 'Ada' )
+  console.log(ada)
   
   // Array.prototype.reduce()
   // 5. How many years did all the inventors live?
