@@ -18,9 +18,12 @@ const inventors = [
   // 1. Filter the array of inventors into a new array containing only the inventors born in the 1500's
   //take out everything where the year does not live within 1500's
 
-  const only = inventors.filter(() => inventors.year >= 1500 && inventors.passed <= 1599)
+  const targetBirth = inventors.filter(inventor =>  inventor.year >= 1500  )
+
+  //CORRECT
+  
   //why callback function? you are breaking down the inventors array into its indexes. 
-  console.log(only)
+  console.log(targetBirth)
   
   // Array.prototype.map()
   // 2. Map the array of the inventors into a new array containing objects with just the first and last names as properties
@@ -34,14 +37,14 @@ const inventors = [
   // 3. Sort the inventors by birth date (year property), in ascending order
   //subtract one property value from another to see which is more. 
  
-  inventors.sort((a,b, inventor)=> ( inventor.passed - inventor.year)  )
+  // inventors.sort((a,b, inventor)=> ( inventor.passed - inventor.year)  )
 //reread the problem, overcomplication 
   
   // Array.prototype.find()
   // 4. Find the inventor object with the first name of 'Ada'
 //identify a specific value and the property it belongs to 
 
-const ada = inventors.find( 'ada' => {first: 'ada' })
+// const ada = inventors.find( 'ada' => {first: 'ada' })
 //issue with argument, you are iterating on an array so you need to basically be calling the individual indexes and then keying into each ones specific property that is equal to the value we are looking for
   
   // console.log(ada)
@@ -71,7 +74,7 @@ const ada = inventors.find( 'ada' => {first: 'ada' })
   // Hint: As a start, consider using the String.prototype.split method to "split" the string using ', ' as the separator
   
   //ultimately we want to join back up after we reverse and split into two strings and we are inserting this into a new array 
-const namesProper = people.map(person => split(person).reverse().join(', '));
+// const namesProper = people.map(person => split(person).reverse().join(', '));
 //the split needs the style of how its to be done, but you also need to the form to do it on. You've created the name for the indecies with your argument. 
 
   // console.log(happy)
@@ -85,8 +88,8 @@ const namesProper = people.map(person => split(person).reverse().join(', '));
   // Hint: Since you want to return an object, be sure to pass an empty {} for the initial value of the "accumulator".
   //create an empty object where we are going to have keys and how often the keys are mentioned from the data set. Increment if the key has been mentioned otherwise set it to one when its read .
 
-  function count(data) {
-    counter = {}; 
+  // function count(data) {
+  //   counter = {}; 
     
   
   const devs = [
