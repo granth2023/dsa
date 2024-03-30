@@ -1,3 +1,6 @@
+
+//TODO 3/30: Complete reduce methods, review and redo the entire lab, find next lab now 
+
 //callback function is what? how do we use it 
 const inventors = [
     { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 },
