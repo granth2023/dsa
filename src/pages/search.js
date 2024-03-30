@@ -107,27 +107,48 @@
 
 // issues because you're pulling values into the variables and then just using these values and creating a broken code. Try again before moving on. 
 
-function binarySearch(array, x){
-    let start = 0
-    let end = array.length - 1
+// function binarySearch(array, x){
+//     let start = 0
+//     let end = array.length - 1
 
-    while ( start <= end) {
-    let midpoint = Math.floor((start + end)/2)
-    if ( array[midpoint] == x){
-        return midpoint
-    } else if ( array[midpoint] < x ){
+//     while ( start <= end) {
+//     let midpoint = Math.floor((start + end)/2)
+//     if ( array[midpoint] == x){
+//         return midpoint
+//     } else if ( array[midpoint] < x ){
         
-        end = midpoint - 1;
-        //youre saying the value of midpoint is less than x which mean we eliminate the left half so we need to look at the right half 
-    } else if (array[midpoint] > x){
-        start = midpoint + 1;
-        //we need ot look at the left half if the midpoint's value is greater than x 
-    } else{
-        return -1 
-    }
+//         end = midpoint - 1;
+//         //youre saying the value of midpoint is less than x which mean we eliminate the left half so we need to look at the right half 
+//     } else if (array[midpoint] > x){
+//         start = midpoint + 1;
+//         //we need ot look at the left half if the midpoint's value is greater than x 
+//     } else{
+//         return -1 
+//     }
 
-    }
+//     }
 
-}
+// }
 
 //remember, binary can only work with sorted algorithims! we can't do this if for example well, its unsorted! 
+
+//4th
+
+function binary(array, x){
+    let start = 0
+    let finish = array.length -1
+
+    while( start<=finish ){
+        let midpoint = Math.floor((start + finish)/2)
+
+        if( array[midpoint] == x ){
+            return midpoint
+} else if (array[midpoint] > x){
+    end = midpoint -1
+} else if ( array[midpoint] < x){
+    starat = midpoint + 1
+} else{
+    return -1
+}
+    }
+}
