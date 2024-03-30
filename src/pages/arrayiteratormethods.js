@@ -85,7 +85,9 @@ const namesProper = people.map(person => split(person).reverse().join(', '));
   // Hint: Since you want to return an object, be sure to pass an empty {} for the initial value of the "accumulator".
   //create an empty object where we are going to have keys and how often the keys are mentioned from the data set. Increment if the key has been mentioned otherwise set it to one when its read .
 
-  
+  function count(data) {
+    counter = {}; 
+    
   
   const devs = [
     { name: 'Wes', year: 1988 },
