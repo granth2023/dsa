@@ -134,21 +134,21 @@
 
 //4th
 
-function binary(array, x){
-    let start = 0
-    let finish = array.length -1
+function binary(array, x) {
+  let start = 0;
+  let finish = array.length - 1;
 
-    while( start<=finish ){
-        let midpoint = Math.floor((start + finish)/2)
+  while (start <= finish) {
+    let midpoint = Math.floor((start + finish) / 2);
 
-        if( array[midpoint] == x ){
-            return midpoint
-} else if (array[midpoint] > x){
-    end = midpoint -1
-} else if ( array[midpoint] < x){
-    starat = midpoint + 1
-} else{
-    return -1
-}
+    if (array[midpoint] == x) {
+      return midpoint;
+    } else if (array[midpoint] > x) {
+      end = midpoint - 1;
+    } else if (array[midpoint] < x) {
+      starat = midpoint + 1;
+    } else {
+      return -1;
     }
+  }
 }
