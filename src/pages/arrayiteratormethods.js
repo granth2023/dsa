@@ -30,15 +30,22 @@ const inventors = [
   // Hint:  Return a new object literal from the callback (don't mutate the object being passed in to map)
   // the new data set needs to have specific properties from the keyss. 
   
-  const names = inventors.map((inventor) => inventor.first && inventor.last)
+  // const names = inventors.map((inventor) => inventor.first && inventor.last)
+
+  const onlyNames = inventors.map(inventor =>  ({first: inventor.first, last: inventor.last}) )
+  console.log(onlyNames)
+  //close youre creating an ojbect so make sure youre syntax is correct, you need to have the first and last in an object and that means callback notation with what you are passing which is the specific new object params.
+
   //you cna't just pass this last one because both are truthy plus its not an ojbect, you need the first and last keys invovled here! 
-  console.log(names)
+  // console.log(names)
   // Array.prototype.sort()
   // 3. Sort the inventors by birth date (year property), in ascending order
   //subtract one property value from another to see which is more. 
  
   // inventors.sort((a,b, inventor)=> ( inventor.passed - inventor.year)  )
+const sortedInventors = inventors.sort((a,b) => a.year - b.year)
 //reread the problem, overcomplication 
+console.log(sortedInventors)
   
   // Array.prototype.find()
   // 4. Find the inventor object with the first name of 'Ada'
