@@ -111,7 +111,7 @@ console.log(reorganizedNames)
     { name: 'Wes', year: 1988 },
     { name: 'Kait', year: 1986 },
     { name: 'Irv', year: 1970 },
-    { name: 'Lux', year: 2015 }
+    { name: 'Lux', year: 1999 }
   ];
   
   // Array.prototype.some()
@@ -129,7 +129,8 @@ console.log(isOlderThanNineTeen)
 
 // console.log(every)
   
-  
+const allIsOlderThanNineTeen = devs.every(dev => new Date().getFullYear() - dev.year >= 19)
+console.log(allIsOlderThanNineTeen)
   const comments = [
     { text: 'Love this!', id: 523423 },
     { text: 'Super good', id: 823423 },
