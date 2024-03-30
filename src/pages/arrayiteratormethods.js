@@ -152,7 +152,7 @@ console.log(allIsOlderThanNineTeen)
   // 11. Find the index of the comment with an id of 123523
   
   //take a value at an array index to return the idnex 
- 
-//  console.log(targetIndex);
+ const targetIndex = comments.findIndex(comment => comment.id == 542328)
+ console.log(targetIndex);
   
   
