@@ -141,7 +141,9 @@ console.log(allIsOlderThanNineTeen)
   
   // Array.prototype.find()
   // 10. Find the comment with the id of 823423
-  
+
+  const superGood = comments.find(comment => comment.id === 823423)
+  console.log(superGood)
   // take the value keyed in from the property and find it. 
  
   // console.log(targetId);
