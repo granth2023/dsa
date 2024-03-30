@@ -112,15 +112,22 @@ function binarySearch(array, x){
     let end = array.length - 1
 
     while ( start <= end) {
-
-        let midpoint = Math.floor((start + end)/2)
+    let midpoint = Math.floor((start + end)/2)
     if ( array[midpoint] == x){
         return midpoint
+    } else if ( array[midpoint] < x ){
+        
+        end = midpoint - 1;
+        //youre saying the value of midpoint is less than x which mean we eliminate the left half so we need to look at the right half 
+    } else if (array[midpoint] > x){
+        start = midpoint + 1;
+        //we need ot look at the left half if the midpoint's value is greater than x 
+    } else{
+        return -1 
     }
 
     }
-
-
-
 
 }
+
+//remember, binary can only work with sorted algorithims! we can't do this if for example well, its unsorted! 
