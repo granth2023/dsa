@@ -106,3 +106,21 @@
 // }
 
 // issues because you're pulling values into the variables and then just using these values and creating a broken code. Try again before moving on. 
+
+function binarySearch(array, x){
+    let start = 0
+    let end = array.length - 1
+
+    while ( start <= end) {
+
+        let midpoint = Math.floor((start + end)/2)
+    if ( array[midpoint] == x){
+        return midpoint
+    }
+
+    }
+
+
+
+
+}
