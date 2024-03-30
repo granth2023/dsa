@@ -119,6 +119,9 @@ console.log(reorganizedNames)
   // Hint: To get today's year, use the getFullYear method of new Date(), i.e., new Date().getFullYear()
 //use 19 as an operator to see if the value of their year born subtracts from the current year is greater. 
 
+const isOlderThanNineTeen = devs.some(dev => new Date().getFullYear() - dev.year >= 19)
+console.log(isOlderThanNineTeen)
+
 // console.log(atLeastOne)
   // Array.prototype.every()
   // 9. Check if everyone is 19 or older?
