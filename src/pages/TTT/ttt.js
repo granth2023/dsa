@@ -61,3 +61,15 @@ const squares = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 //if we check win and end game is not flase or the current class is not hte winner but we are checking winning we are accounting for is there a drwaw which needs to function and what do we do with endgame for that? what does that now pass? if endgame does not need to run what needs to function next? 
 
+//what is in the function is draw method? 
+//how do we return how every cell contains either x or circle? how do we return that? 
+
+//where do we declare the winning message element? how do we save the id of winning message in it? 
+
+//how do we save the restart button id 
+
+//where do we declare the restart button? what are we adding to it? what fucntion intiates out of it? 
+
+//when we start game how do we clear the board? what do we we need to do for each cell elements? what are we removing and what else could we be removing? what about our click? are we putting the add event back in for once makes its true? 
+
+
