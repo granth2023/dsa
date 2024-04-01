@@ -41,5 +41,18 @@ const squares = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 //how do we swap turns? how do we save circles turn? 
 //do we want to set the board hover classes on the click? what does that do? do we need to declare we are saving in board whatever element we want to get by id? 
 
+// in this setboard hover class function what are we doing? how do we remove the x class in our class clist and circle? what do we add if its circle turn or else? 
 
+//when do we initiate the game? 
+//how do we initiate the game? whose circle turn is it? what do we set that to? what data is it?  what are we doing to each cell element in here? are we doing other fucntions? what about our board hover? 
+
+//how do we declare winning combos? is that a certian data structure? how does that look? 
+
+//do we chekc if there was a winner by passing the current class what that is made up of? 
+
+//how do we check winner? what do we return? do we want to see if a combination currently exists as some of the winning combo data and then we want to return to see if every index at that combiantion has the current class of the turn that just went based on the value at the index of each of the cell elements
+
+//if there is a winner, we console log it
+
+//
 
