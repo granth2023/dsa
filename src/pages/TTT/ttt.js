@@ -23,10 +23,17 @@ const squares = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 
 // save x and save circle 
+const X_ClASS='x'
+const CIRLCE_CLASS='o'
+cell.elements[] = document.querySelectorAll('cell')
+let turner;
+
+
 // save all cells from html in an array using the dom 
 // declare a turn keeper 
 
 //on each of the cells find which cell needs to handle a click and listen for the click -- once its clicked we want to declare it on or true 
+cells.forEach(cell => cell.addEventListener('click', handleClick, {once: true}))
 
 //what happens when we click? what do we pass? is this an event? 
 //how do we save the cell we are targeting in this event? 
