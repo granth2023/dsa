@@ -73,3 +73,5 @@ const squares = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 //when we start game how do we clear the board? what do we we need to do for each cell elements? what are we removing and what else could we be removing? what about our click? are we putting the add event back in for once makes its true? 
 
 
+//ceremonial commit 
+
