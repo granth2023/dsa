@@ -1,0 +1,55 @@
+
+
+/* create a after and before for a border box 
+
+-create a body style with a zero margin
+
+--add in a root with ceel size to 100px and also mark size using cell size times point 9 called via var and cal functions
+
+
+- style the board class to have full width and height, with a grid, centered justification and alignment and also set a 3 auto repeat for grid template columns
+
+
+-- for the cell class use pixels for width and ehight and black background with a white border but change that to the variable for --cell-size for width and ehight
+--canage the background back to white and change the border to solid black
+
+
+--create a styling for the cell classes first child and nth child at 2 and 3 with border top none
+
+--create style for cell class nth child to 3n + 1 and 3n + 3 for border right none and then for the last child and 8 and 7 child for border bottom 
+
+-- add justify content and align items to cell 
+
+-- create a cell class at x for before and after and use conent for empty string, a width with a mark size times .15 and var clac andon the width and height using var and mark size and background color this is for your  X
+
+-- add postioin relative to cell
+
+create a another cell.x before and cell.x after for transforming thaem by rotating 45 and -45 respectively 
+
+-- in html create a class for the x and the circle within the first two classes of the html
+
+-- create sub cell for the circle before and after with width height background color using mark size and a point 7 time 
+
+-- add pionter cursors to cell
+
+-- do not allow cursor for cell with circle and x 
+
+-- add x within the board html class and create board with x in a cell with hover and a before and after to the cell x before and after but need not (.x):not(.circle) added to both and also the transorm for cell x 
+
+-- do the same for circle 
+
+-- remove circle from board class 
+-- add in whatever imissed
+
+-- create winning message class with a 0 top left right bottom fixed position and background color, justify content align items color and font size
+add flex driection column and display none 
+-- create winning message button with font size, background color, border padding, cursor, 
+
+--create winning message for hover with backgorund color, color, border color 
+
+== create winning messsage show display flex 
+
+--remove x and o from the first two cells in html and done 
+
+
+*/
