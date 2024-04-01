@@ -54,5 +54,10 @@ const squares = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 //if there is a winner, we console log it
 
-//
+//if when we check the winner and its not end game false, we run the end game fucntion
+//what do we pass in the end game
+//what do we do if its a draw? 
+//what about oterhwise? do we add the inner text to the winning message based on the circle turn and show the style for the class list at winning message element? 
+
+//if we check win and end game is not flase or the current class is not hte winner but we are checking winning we are accounting for is there a drwaw which needs to function and what do we do with endgame for that? what does that now pass? if endgame does not need to run what needs to function next? 
 
