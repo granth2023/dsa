@@ -155,3 +155,45 @@ function binary(array, x) {
 
 
 //binary search algo 
+
+//you come to a precipe with 7 different options each with a weighted options each in order
+
+//
+
+function binary(array, x){
+  let start = 0
+  let finish = array.length - -1 
+
+  while( start <= finish){
+    let midpoint = Math.floor((start + finish)/2)
+    if( array[midpoint] == x ){
+      return midpoint
+    } else if ( array[midpoint] < x){
+      start = midpoint + 1
+    } else {
+      finish = midpoint -1 
+    }
+
+
+  }
+  return -1
+}
+
+
+//
+// Linear Search
+// Clarification on Use Cases: Can you provide more examples of scenarios where a linear search would be preferable over other search methods, even in a sorted array?
+// Efficiency Questions: For linear search, is the Big O runtime always O(N), or are there any edge cases where it could be more efficient?
+// Comparison with Other Search Methods: How does linear search performance compare to other search algorithms when dealing with small datasets?
+// Binary Search
+// Midpoint Calculation: Could you explain why finding the midpoint involves adding the start and end indexes together and then dividing by 2? Are there cases where this calculation could lead to issues, such as overflow in some programming languages?
+// Behavior of Bitwise NOT: In the pseudocode for binary search, if the element is not found, it returns the bitwise NOT of the start index. Can you explain the rationale behind this and how it might be used in practice?
+// Search Space Reduction Logic: How exactly does reducing the search space to the left or right of the midpoint improve efficiency? Can you explain the intuition behind this choice?
+// Practical Application: In a real-world application, how significant is the performance difference between binary search and linear search? Could you give an example with actual numbers?
+// Level Up 🚀
+// Modifying Sorted Collections: When adding or deleting elements from a sorted collection, what strategies can be employed to maintain the sorted order efficiently?
+// Complex Elements: How does indexing and searching change when dealing with more complex elements in a collection, such as objects or dictionaries, rather than simple data types like numbers or strings?
+// Interpolation Search: Can you explain what interpolation search is and how it compares to binary search? When might it be more effective to use interpolation search over binary search?
+// Whiteboarding
+// Whiteboarding Practice: Could you suggest a few problems that would be particularly good for practicing binary and linear searches on a whiteboard?
+// Transitioning Concepts to Code: How would you recommend transitioning the understanding of these search algorithms from theoretical to practical, especially in a whiteboarding context?
