@@ -152,3 +152,6 @@ function binary(array, x) {
     }
   }
 }
+
+
+//binary search algo 

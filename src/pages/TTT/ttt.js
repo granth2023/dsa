@@ -36,6 +36,12 @@ let turner;
 cells.forEach(cell => cell.addEventListener('click', handleClick, {once: true}))
 
 //what happens when we click? what do we pass? is this an event? 
+function handleClick(e){
+    cell
+
+
+
+}
 //how do we save the cell we are targeting in this event? 
 //how do we save which x or 0 we are using based on whose turn it is? 
 //how do we take the current turn we are in and their marker and the cell they chose and place it on the mark? 
