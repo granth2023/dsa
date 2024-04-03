@@ -91,3 +91,9 @@ function handleClick(e){
 
 
 //personal pseudo code 
+
+//what do i need for ttt? 
+//Start the game function 
+//restart the game function 
+//a board of nine cells
+//a 
