@@ -88,3 +88,6 @@ function handleClick(e){
 
 //ceremonial commit 
 
+
+
+//personal pseudo code 
