@@ -101,3 +101,4 @@ function handleClick(e){
 //a understanding of which turn it is so it knows which cell it means to mark. 
 //turn the turn
 //check to see if the game is over based on matching the current board with the winning combinations 
+//if there is a winner see produce a winner function 
