@@ -108,4 +108,10 @@ function handleClick(e){
 function handleClick(){}
 function swapTurn(){}
 function winner(){}
-function draw(){}
+
+
+if ( boardArray == 0){
+function draw()
+}
+
+function draw()
