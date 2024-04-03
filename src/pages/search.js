@@ -183,17 +183,34 @@ function binary(array, x){
 //
 // Linear Search
 // Clarification on Use Cases: Can you provide more examples of scenarios where a linear search would be preferable over other search methods, even in a sorted array?
+// Linear search is straightforward and does not require any preprocessing of the data, such as sorting. This makes it ideal for:
+
+
 // Efficiency Questions: For linear search, is the Big O runtime always O(N), or are there any edge cases where it could be more efficient?
+
+
 // Comparison with Other Search Methods: How does linear search performance compare to other search algorithms when dealing with small datasets?
+
+
 // Binary Search
 // Midpoint Calculation: Could you explain why finding the midpoint involves adding the start and end indexes together and then dividing by 2? Are there cases where this calculation could lead to issues, such as overflow in some programming languages?
+
+
 // Behavior of Bitwise NOT: In the pseudocode for binary search, if the element is not found, it returns the bitwise NOT of the start index. Can you explain the rationale behind this and how it might be used in practice?
+
+
 // Search Space Reduction Logic: How exactly does reducing the search space to the left or right of the midpoint improve efficiency? Can you explain the intuition behind this choice?
+
+
 // Practical Application: In a real-world application, how significant is the performance difference between binary search and linear search? Could you give an example with actual numbers?
+
+
 // Level Up 🚀
 // Modifying Sorted Collections: When adding or deleting elements from a sorted collection, what strategies can be employed to maintain the sorted order efficiently?
 // Complex Elements: How does indexing and searching change when dealing with more complex elements in a collection, such as objects or dictionaries, rather than simple data types like numbers or strings?
 // Interpolation Search: Can you explain what interpolation search is and how it compares to binary search? When might it be more effective to use interpolation search over binary search?
+
+
 // Whiteboarding
 // Whiteboarding Practice: Could you suggest a few problems that would be particularly good for practicing binary and linear searches on a whiteboard?
 // Transitioning Concepts to Code: How would you recommend transitioning the understanding of these search algorithms from theoretical to practical, especially in a whiteboarding context?
@@ -224,7 +241,7 @@ function binary(array, x){
 
 // Linear Search
 // Clarification on Use Cases:
-// Linear search is straightforward and does not require any preprocessing of the data, such as sorting. This makes it ideal for:
+//
 
 // Small datasets where the simplicity and minimal overhead of linear search might outperform more complex algorithms.
 // Datasets that cannot be sorted or where the cost of sorting outweighs the benefits of faster search methods.
@@ -273,3 +290,96 @@ function binary(array, x){
 // Outline the steps of the algorithm before coding, including edge cases and how they will be handled.
 // Practice coding the algorithm by hand or in a simple text editor to simulate the whiteboarding environment, focusing on clarity and correctness over optimization at first.
 // After getting comfortable with the basic implementation, work on optimizing your code and handling edge cases more gracefully.
+
+
+function binary(array, x){
+  let start = 0
+  let end = array.length -1
+
+  while (start<=end){
+    let midpoint = Math.floor((start + end)/2)
+    if(array[midpoint] == x) {
+      return midpoint
+    } else if (array[midpoint] < x){
+      start = midpoint + 1
+    } else{
+      end = midpoint - 1
+    }
+  }
+  return -1
+}
+
+
+
+function binaryDelete(array, x) {
+  let start = 0;
+  let end = array.length - 1;
+
+  while (start <= end) {
+    let midpoint = Math.floor((start + end) / 2);
+    if (array[midpoint] == x) {
+      // Found the number, now remove it using splice
+      array.splice(midpoint, 1);
+      return true; // Return true to indicate the number was found and deleted
+    } else if (array[midpoint] < x) {
+      start = midpoint + 1;
+    } else {
+      end = midpoint - 1;
+    }
+  }
+
+  return false; // Return false to indicate the number was not found and hence not deleted
+}
+
+
+
+//since we know they're sorted nad lets say we know something else about our data, maybe we have a roadmap of  
+
+function interpolationSearch(array, x) {
+  let start = 0;
+  let end = array.length - 1;
+
+  while (start <= end && x >= array[start] && x <= array[end]) {
+    // Interpolation formula to find the position
+    let pos = start + Math.floor(((end - start) / (array[end] - array[start])) * (x - array[start]));
+
+    // If the element is found
+    if (array[pos] == x) {
+      return pos;
+    }
+
+    // If x is larger, x is in the upper part
+    if (array[pos] < x) {
+      start = pos + 1;
+    }
+    // If x is smaller, x is in the lower part
+    else {
+      end = pos - 1;
+    }
+  }
+  return -1; // Element not found
+}
+
+
+
+
+
+function findFirstOccurrence(arr, target) {
+  let left = 0;
+  let right = arr.length - 1;
+  let result = -1; // Default if the target is not found
+  
+  while (left <= right) {
+    let mid = Math.floor((left + right) / 2);
+    if (arr[mid] === target) {
+      result = mid; // Potential first occurrence found
+      right = mid - 1; // Try finding an earlier occurrence
+    } else if (arr[mid] < target) {
+      left = mid + 1;
+    } else {
+      right = mid - 1;
+    }
+  }
+
+  return result; // Returns -1 if not found, or the index of the first occurrence
+}
