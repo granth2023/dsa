@@ -96,4 +96,6 @@ function handleClick(e){
 //Start the game function 
 //restart the game function 
 //a board of nine cells
-//a 
+//a click function to select a cell
+//a symbol to mark that selected box. 
+//a understanding of which turn it is so it knows which cell it means to mark. 
