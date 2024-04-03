@@ -134,24 +134,24 @@
 
 //4th
 
-function binary(array, x) {
-  let start = 0;
-  let finish = array.length - 1;
+// function binary(array, x) {
+//   let start = 0;
+//   let finish = array.length - 1;
 
-  while (start <= finish) {
-    let midpoint = Math.floor((start + finish) / 2);
+//   while (start <= finish) {
+//     let midpoint = Math.floor((start + finish) / 2);
 
-    if (array[midpoint] == x) {
-      return midpoint;
-    } else if (array[midpoint] > x) {
-      end = midpoint - 1;
-    } else if (array[midpoint] < x) {
-      starat = midpoint + 1;
-    } else {
-      return -1;
-    }
-  }
-}
+//     if (array[midpoint] == x) {
+//       return midpoint;
+//     } else if (array[midpoint] > x) {
+//       end = midpoint - 1;
+//     } else if (array[midpoint] < x) {
+//       starat = midpoint + 1;
+//     } else {
+//       return -1;
+//     }
+//   }
+// }
 
 
 //binary search algo 
@@ -160,24 +160,24 @@ function binary(array, x) {
 
 //
 
-function binary(array, x){
-  let start = 0
-  let finish = array.length - -1 
+// function binary(array, x){
+//   let start = 0
+//   let finish = array.length - -1 
 
-  while( start <= finish){
-    let midpoint = Math.floor((start + finish)/2)
-    if( array[midpoint] == x ){
-      return midpoint
-    } else if ( array[midpoint] < x){
-      start = midpoint + 1
-    } else {
-      finish = midpoint -1 
-    }
+//   while( start <= finish){
+//     let midpoint = Math.floor((start + finish)/2)
+//     if( array[midpoint] == x ){
+//       return midpoint
+//     } else if ( array[midpoint] < x){
+//       start = midpoint + 1
+//     } else {
+//       finish = midpoint -1 
+//     }
 
 
-  }
-  return -1
-}
+//   }
+//   return -1
+// }
 
 
 //
@@ -185,15 +185,27 @@ function binary(array, x){
 // Clarification on Use Cases: Can you provide more examples of scenarios where a linear search would be preferable over other search methods, even in a sorted array?
 // Linear search is straightforward and does not require any preprocessing of the data, such as sorting. This makes it ideal for:
 
+// Small datasets where the simplicity and minimal overhead of linear search might outperform more complex algorithms.
+// Datasets that cannot be sorted or where the cost of sorting outweighs the benefits of faster search methods.
+// Real-time search requirements in unsorted data, where data is constantly changing or being updated.
+
 
 // Efficiency Questions: For linear search, is the Big O runtime always O(N), or are there any edge cases where it could be more efficient?
+
+// The Big O runtime of a linear search is typically O(N) because, in the worst case, every element needs to be checked once. However, if the element is found early in the collection, the effective runtime can be less. This variance in actual runtime doesn't change the Big O notation but does affect the practical performance. Therefore, for certain distributions of data or when searching for commonly occurring elements, linear search can be very quick.
+
 
 
 // Comparison with Other Search Methods: How does linear search performance compare to other search algorithms when dealing with small datasets?
 
+// For small datasets, the difference in performance between linear search and more complex algorithms like binary search is negligible, and the overhead of preparing the data (e.g., sorting for binary search) might not be worth it. Linear search's simplicity and lack of need for sorted data can make it faster for small arrays due to lower overhead.
+
+
 
 // Binary Search
 // Midpoint Calculation: Could you explain why finding the midpoint involves adding the start and end indexes together and then dividing by 2? Are there cases where this calculation could lead to issues, such as overflow in some programming languages?
+
+// / Finding the midpoint by adding the start and end indexes and dividing by 2 is efficient and straightforward. However, in languages with fixed integer sizes, this can cause integer overflow if the indexes are very large. To avoid this, some implementations calculate the midpoint as start + (end - start) / 2. This approach avoids overflow by ensuring the calculation remains within the bounds of the data type.
 
 
 // Behavior of Bitwise NOT: In the pseudocode for binary search, if the element is not found, it returns the bitwise NOT of the start index. Can you explain the rationale behind this and how it might be used in practice?
@@ -201,6 +213,8 @@ function binary(array, x){
 
 // Search Space Reduction Logic: How exactly does reducing the search space to the left or right of the midpoint improve efficiency? Can you explain the intuition behind this choice?
 
+
+// The efficiency of binary search comes from its ability to eliminate half of the search space with each comparison. This is based on the principle that the data is sorted, so once you compare the search element with the midpoint, you know which half of the array the element (if it exists) must be in. This logarithmic reduction (halving the problem size with each step) is what gives binary search its O(log(N)) runtime.
 
 // Practical Application: In a real-world application, how significant is the performance difference between binary search and linear search? Could you give an example with actual numbers?
 
@@ -243,9 +257,7 @@ function binary(array, x){
 // Clarification on Use Cases:
 //
 
-// Small datasets where the simplicity and minimal overhead of linear search might outperform more complex algorithms.
-// Datasets that cannot be sorted or where the cost of sorting outweighs the benefits of faster search methods.
-// Real-time search requirements in unsorted data, where data is constantly changing or being updated.
+//
 // Efficiency Questions:
 // The Big O runtime of a linear search is typically O(N) because, in the worst case, every element needs to be checked once. However, if the element is found early in the collection, the effective runtime can be less. This variance in actual runtime doesn't change the Big O notation but does affect the practical performance. Therefore, for certain distributions of data or when searching for commonly occurring elements, linear search can be very quick.
 
@@ -309,6 +321,10 @@ function binary(array, x){
   return -1
 }
 
+array = [5, 27, 53,59,60,66,74,79,83,90,96]
+
+console.log(binary(array, 90))
+
 
 
 function binaryDelete(array, x) {
@@ -361,20 +377,21 @@ function interpolationSearch(array, x) {
 }
 
 
+newArr = [ 1, 1, 2, 3, 4, 7, 8, 9, 10,]
 
 
 
-function findFirstOccurrence(arr, target) {
+function findFirstOccurrence(newArr, target) {
   let left = 0;
-  let right = arr.length - 1;
+  let right = newArr.length - 1;
   let result = -1; // Default if the target is not found
   
   while (left <= right) {
     let mid = Math.floor((left + right) / 2);
-    if (arr[mid] === target) {
+    if (newArr[mid] === target) {
       result = mid; // Potential first occurrence found
       right = mid - 1; // Try finding an earlier occurrence
-    } else if (arr[mid] < target) {
+    } else if (newArr[mid] < target) {
       left = mid + 1;
     } else {
       right = mid - 1;
@@ -383,3 +400,6 @@ function findFirstOccurrence(arr, target) {
 
   return result; // Returns -1 if not found, or the index of the first occurrence
 }
+
+
+console.log(findFirstOccurrence(newArr, 2))
