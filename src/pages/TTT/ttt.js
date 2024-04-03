@@ -99,3 +99,5 @@ function handleClick(e){
 //a click function to select a cell
 //a symbol to mark that selected box. 
 //a understanding of which turn it is so it knows which cell it means to mark. 
+//turn the turn
+//check to see if the game is over based on matching the current board with the winning combinations 
