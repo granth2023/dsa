@@ -103,6 +103,7 @@ function handleClick(e){
 //check to see if the game is over based on matching the current board with the winning combinations 
 //if there is a winner see produce a winner function 
 //if the board is full, then produce draw function 
+//if 
 
 
 function handleClick(){}
@@ -110,8 +111,12 @@ function swapTurn(){}
 function winner(){}
 
 
-if ( boardArray == 0){
-function draw()
+if (player1Array > 2 && player1array == winningCombos || player2Array > 2 && player2Array == winningCombos){
+     winner()
 }
 
-function draw()
+if ( boardArray == 0){
+ draw()
+}
+
+function draw(){}
