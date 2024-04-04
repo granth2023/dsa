@@ -4,8 +4,8 @@ const colors = {
     player2: 'blue'
 }
 //what does the board look like index wise? 
-const winningCombos = [ [], [], [], [], [], [], [], [] ]
-const board =[]
+const winningCombos = [ [1, 2, 3], [1, 5, 9], [1, 4, 7], [2, 5, 8], [3, 6, 9], [3, 5, 7], [4, 5, 6], [7, 8, 9] ]
+const board =[1, 2, 3, 4, 5, 6, 7, 8, 9]
 let turn;
 const endgame = ['player1 Wins', 'player2 Wins', 'Tie!']
 const squares = [1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -131,3 +131,5 @@ function draw(){}
 //forget the player-- form the persepctive of the computer. -- the board is made up fo nine squares
 //when the board is clicked, depending on the turn it is, that square gets fileld up with a symbol. 
 // if the box has an x we then classify if the x class has a winning combo? but what makes up a winning combo? you need three in a row so how does that work? everything woudl be 3 by 3? so when a user has 3 we check if its a wining combo and then any time from tehre but then it still has to parse data you're basically coding it so youre checking okay does the array have these other two? 
+
+//so we have the board and we have the winning combinations -- does the winnign combination get hit by any of the classes? 
