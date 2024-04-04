@@ -127,3 +127,7 @@ function draw(){}
 
 
 //you might click more than 3 to get ot the win so how do we check if the winner has been called, does he has any of the three but its not just winning combos in sets of three because he is not in group sof three, he needs to match it and then match the three do any of the three match the box? how does that work? 
+
+//forget the player-- form the persepctive of the computer. -- the board is made up fo nine squares
+//when the board is clicked, depending on the turn it is, that square gets fileld up with a symbol. 
+// if the box has an x we then classify if the x class has a winning combo? but what makes up a winning combo? you need three in a row so how does that work? everything woudl be 3 by 3? so when a user has 3 we check if its a wining combo and then any time from tehre but then it still has to parse data you're basically coding it so youre checking okay does the array have these other two? 
