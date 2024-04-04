@@ -14,4 +14,13 @@ fetch('https://api.example.com/data', {
 
 
 // → How would you create a form to collect user data?
+
+<form id="userForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <button type="submit">Submit</button>
+</form>
+
 // → How would you go about implementing search on a website?
