@@ -107,10 +107,12 @@ function handleClick(e){
 
 
 function handleClick(){}
+    
+
 function swapTurn(){}
 function winner(){}
 
-
+//how do i get hte order to not matter for an array. 
 if (player1Array > 2 && player1array == winningCombos || player2Array > 2 && player2Array == winningCombos){
      winner()
 }
@@ -120,3 +122,5 @@ if ( boardArray == 0){
 }
 
 function draw(){}
+
+
