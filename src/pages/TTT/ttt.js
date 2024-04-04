@@ -5,11 +5,13 @@ const colors = {
 }
 //what does the board look like index wise? 
 const winningCombos = [ [1, 2, 3], [1, 5, 9], [1, 4, 7], [2, 5, 8], [3, 6, 9], [3, 5, 7], [4, 5, 6], [7, 8, 9] ]
-const board =[1, 2, 3, 4, 5, 6, 7, 8, 9]
+// const board =[1, 2, 3, 4, 5, 6, 7, 8, 9]
 let turn;
 const endgame = ['player1 Wins', 'player2 Wins', 'Tie!']
 const squares = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
+
+function startGame() {}
 
 
 //when starting the game we need to fill the board array with nine nulls 
@@ -37,7 +39,7 @@ cells.forEach(cell => cell.addEventListener('click', handleClick, {once: true}))
 
 //what happens when we click? what do we pass? is this an event? 
 function handleClick(e){
-    cell
+    cell = document.querySelect.cell.
 
 
 
