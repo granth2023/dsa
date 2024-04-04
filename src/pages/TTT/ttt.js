@@ -126,3 +126,4 @@ if ( boardArray == 0){
 function draw(){}
 
 
+//you might click more than 3 to get ot the win so how do we check if the winner has been called, does he has any of the three but its not just winning combos in sets of three because he is not in group sof three, he needs to match it and then match the three do any of the three match the box? how does that work? 
