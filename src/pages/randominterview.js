@@ -23,4 +23,31 @@ fetch('https://api.example.com/data', {
     <button type="submit">Submit</button>
 </form>
 
-// → How would you go about implementing search on a website?
+
+document.getElementById('userForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const data = Object.fromEntries(formData);
+    console.log(data); // Process or send the data
+});
+
+
+
+
+
+{/* // → How would you go about implementing search on a website? */}
+
+<input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search for names...">
+
+
+function searchFunction() {
+    let input = document.getElementById('searchInput').value.toUpperCase();
+    // Assume you have a list of items to search through.
+    document.querySelectorAll('.item').forEach(item => {
+        if (item.textContent.toUpperCase().includes(input)) {
+            item.style.display = "";
+        } else {
+            item.style.display = "none";
+        }
+    });
+}
