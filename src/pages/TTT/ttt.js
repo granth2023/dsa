@@ -11,7 +11,12 @@ const endgame = ['player1 Wins', 'player2 Wins', 'Tie!']
 const squares = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 
-function startGame() {}
+function startGame() {
+    let chosenSquares = []
+    //message that its X's turn
+    //when you hover over the board, the current turn fades over the bloc 
+}
+
 
 
 //when starting the game we need to fill the board array with nine nulls 
@@ -40,6 +45,8 @@ cells.forEach(cell => cell.addEventListener('click', handleClick, {once: true}))
 //what happens when we click? what do we pass? is this an event? 
 function handleClick(e){
     cell = document.querySelect.cell.
+    //if the blcok is chosen, it wont light up liek you could click it
+    
 
 
 
