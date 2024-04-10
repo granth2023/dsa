@@ -68,6 +68,15 @@ class LinkedLists {
 
 
 //insert last node
+//create function to insert a last data point and insert the data therefore store in a new variable the data as a new node
+//cretae a current variable 
+//if there is no value for the head at the this, then store node in there otherwise store inside current this at the value of head 
+
+//while there is a value for current at next, then restore current with current at next 
+//store insdie current dot next the node 
+//increase the sizer
+
+//review: what does this do? It inserts a lsast? 
 
     insertLast(data){
         // this.head - new Node(data, this.head);
@@ -128,7 +137,13 @@ insertAt(data, index){
 
 //print list data
 
+
+//create function to print list data
+
+
+
 printListData(){
+    //TF store insdie current whatever this at head is
     let current = this.head; 
 
     //while you have something in current which you derive from the head therefore you 
@@ -140,6 +155,7 @@ printListData(){
     }
 }
 }
+//does this show all the nodes? hopefully? what does insert last do? it inserts the last? but what if there is a head? what is its next? is there a double linked list? prev? 
 
 const ll = new LinkedLists();
 
@@ -151,3 +167,6 @@ ll.insertFirst(300)
 ll.insertLast(400)
 
 ll.printListData();
+
+
+//TODO: <1> continue tutorial <2> setup 1x1 with Emre <3> pay Lando <4> greg Emre <5> grade homeworks <6> finsih emails <7> get there at 8am? <2hours writing linked lists> <first hour before students> <find second hour later either at night or with lunch> < write at night> < go to coding space fill out forms> <apply to a job ></apply></find></find>
