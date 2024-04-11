@@ -52,17 +52,30 @@
 // }
 
 
-function two(array, target){
-    let hasmap ={}
+// function two(array, target){
+//     let hasmap ={}
 
-    for(let i = 0; i < array.length; i++){
-        let complmeent = target - array[i]
-        if(hasmap.hasOwnProperty(complement)){
-            reutrn [hasmap[complement], i]
+//     for(let i = 0; i < array.length; i++){
+//         let complmeent = target - array[i]
+//         if(hasmap.hasOwnProperty(complement)){
+//             reutrn [hasmap[complement], i]
+//         }
+//         hasmap[array[i]] = i
+//     }
+// return []
+
+
+// }
+
+function twosum(array, target){
+    hashmap ={}
+
+    for( let i = 0; i < array.length; i++){
+        let complement = target - array[i]
+        if( hashmap.hasOwnProperty(complement)){
+            return [hashmap[compement], i]
         }
-        hasmap[array[i]] = i
+        hashMap[array[i]] = i
     }
-return []
-
-
+    return []
 }
