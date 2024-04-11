@@ -225,11 +225,14 @@ function msi(items){
     return items
   }
 
-  let midpoint = Math.floor(items.length /2)
-  let left = items.slice(0, midpoint)
-  let right = items.slice(midpoint)
+  const midpoint = Math.floor(items.length /2)
+  const left = items.slice(0, midpoint)
+  const right = items.slice(midpoint)
 
-  return merge((mgs(left), mgs(right)))
+  const leftSorted = msi(left)
+  const rightSorted = msi(right)
+
+  return merge(leftSorted, rightSorted)
 
 }
 

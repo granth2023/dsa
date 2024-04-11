@@ -303,103 +303,123 @@
 // Practice coding the algorithm by hand or in a simple text editor to simulate the whiteboarding environment, focusing on clarity and correctness over optimization at first.
 // After getting comfortable with the basic implementation, work on optimizing your code and handling edge cases more gracefully.
 
+//1 function, 2param, 3 variable, a while loop, 3 conditionals, two return, 2 array values, , 3 menint sof firs ttwo vairable, the third vairable happens in while loop
+// function binary(array, x){
+//   let start = 0
+//   let end = array.length -1
 
-function binary(array, x){
-  let start = 0
-  let end = array.length -1
+//   while (start<=end){
+//     let midpoint = Math.floor((start + end)/2)
+//     if(array[midpoint] == x) {
+//       return midpoint
+//     } else if (array[midpoint] < x){
+//       start = midpoint + 1
+//     } else{
+//       end = midpoint - 1
+//     }
+//   }
+//   return -1
+// }
 
-  while (start<=end){
+// array = [5, 27, 53,59,60,66,74,79,83,90,96]
+
+// console.log(binary(array, 90))
+
+
+
+// function binaryDelete(array, x) {
+//   let start = 0;
+//   let end = array.length - 1;
+
+//   while (start <= end) {
+//     let midpoint = Math.floor((start + end) / 2);
+//     if (array[midpoint] == x) {
+//       // Found the number, now remove it using splice
+//       array.splice(midpoint, 1);
+//       return true; // Return true to indicate the number was found and deleted
+//     } else if (array[midpoint] < x) {
+//       start = midpoint + 1;
+//     } else {
+//       end = midpoint - 1;
+//     }
+//   }
+
+//   return false; // Return false to indicate the number was not found and hence not deleted
+// }
+
+
+
+// //since we know they're sorted nad lets say we know something else about our data, maybe we have a roadmap of  
+
+// function interpolationSearch(array, x) {
+//   let start = 0;
+//   let end = array.length - 1;
+
+//   while (start <= end && x >= array[start] && x <= array[end]) {
+//     // Interpolation formula to find the position
+//     let pos = start + Math.floor(((end - start) / (array[end] - array[start])) * (x - array[start]));
+
+//     // If the element is found
+//     if (array[pos] == x) {
+//       return pos;
+//     }
+
+//     // If x is larger, x is in the upper part
+//     if (array[pos] < x) {
+//       start = pos + 1;
+//     }
+//     // If x is smaller, x is in the lower part
+//     else {
+//       end = pos - 1;
+//     }
+//   }
+//   return -1; // Element not found
+// }
+
+
+// newArr = [ 1, 1, 2, 3, 4, 7, 8, 9, 10,]
+
+
+
+// function findFirstOccurrence(newArr, target) {
+//   let left = 0;
+//   let right = newArr.length - 1;
+//   let result = -1; // Default if the target is not found
+  
+//   while (left <= right) {
+//     let mid = Math.floor((left + right) / 2);
+//     if (newArr[mid] === target) {
+//       result = mid; // Potential first occurrence found
+//       right = mid - 1; // Try finding an earlier occurrence
+//     } else if (newArr[mid] < target) {
+//       left = mid + 1;
+//     } else {
+//       right = mid - 1;
+//     }
+//   }
+
+//   return result; // Returns -1 if not found, or the index of the first occurrence
+// }
+
+
+// console.log(findFirstOccurrence(newArr, 2))
+
+
+function binary(arr, x){
+  let start =0
+  let end = arr.length - 1
+
+  while(start<=end){
     let midpoint = Math.floor((start + end)/2)
-    if(array[midpoint] == x) {
-      return midpoint
-    } else if (array[midpoint] < x){
-      start = midpoint + 1
-    } else{
-      end = midpoint - 1
+    if(midpoint[i]==x){
+      return x
+    } else if(midpoint[i]> x){
+      end = midpoint -1
+    }else{
+      start = midpoint +1
     }
+
+
   }
   return -1
 }
-
-array = [5, 27, 53,59,60,66,74,79,83,90,96]
-
-console.log(binary(array, 90))
-
-
-
-function binaryDelete(array, x) {
-  let start = 0;
-  let end = array.length - 1;
-
-  while (start <= end) {
-    let midpoint = Math.floor((start + end) / 2);
-    if (array[midpoint] == x) {
-      // Found the number, now remove it using splice
-      array.splice(midpoint, 1);
-      return true; // Return true to indicate the number was found and deleted
-    } else if (array[midpoint] < x) {
-      start = midpoint + 1;
-    } else {
-      end = midpoint - 1;
-    }
-  }
-
-  return false; // Return false to indicate the number was not found and hence not deleted
-}
-
-
-
-//since we know they're sorted nad lets say we know something else about our data, maybe we have a roadmap of  
-
-function interpolationSearch(array, x) {
-  let start = 0;
-  let end = array.length - 1;
-
-  while (start <= end && x >= array[start] && x <= array[end]) {
-    // Interpolation formula to find the position
-    let pos = start + Math.floor(((end - start) / (array[end] - array[start])) * (x - array[start]));
-
-    // If the element is found
-    if (array[pos] == x) {
-      return pos;
-    }
-
-    // If x is larger, x is in the upper part
-    if (array[pos] < x) {
-      start = pos + 1;
-    }
-    // If x is smaller, x is in the lower part
-    else {
-      end = pos - 1;
-    }
-  }
-  return -1; // Element not found
-}
-
-
-newArr = [ 1, 1, 2, 3, 4, 7, 8, 9, 10,]
-
-
-
-function findFirstOccurrence(newArr, target) {
-  let left = 0;
-  let right = newArr.length - 1;
-  let result = -1; // Default if the target is not found
-  
-  while (left <= right) {
-    let mid = Math.floor((left + right) / 2);
-    if (newArr[mid] === target) {
-      result = mid; // Potential first occurrence found
-      right = mid - 1; // Try finding an earlier occurrence
-    } else if (newArr[mid] < target) {
-      left = mid + 1;
-    } else {
-      right = mid - 1;
-    }
-  }
-
-  return result; // Returns -1 if not found, or the index of the first occurrence
-}
-
-
-console.log(findFirstOccurrence(newArr, 2))
