@@ -35,18 +35,34 @@
 //     }
 //     return [];
 
+// // }
+
+
+// function tooSum(numbers, target){
+//     let hasher = {}
+
+//     for(let i=0; i < numbers.length; i++){
+//         let complement = target - numbers[i]
+//         if(hasher.hasOwnProperty(complement)){
+//             return [hasher[complement], i]
+//         }
+//             hasher[numbers[i]]= i;
+//     }
+//     return [];
 // }
 
 
-function tooSum(numbers, target){
-    let hasher = {}
+function two(array, target){
+    let hasmap ={}
 
-    for(let i=0; i < numbers.length; i++){
-        let complement = target - numbers[i]
-        if(hasher.hasOwnProperty(complement)){
-            return [hasher[complement], i]
+    for(let i = 0; i < array.length; i++){
+        let complmeent = target - array[i]
+        if(hasmap.hasOwnProperty(complement)){
+            reutrn [hasmap[complement], i]
         }
-            hasher[numbers[i]]= i;
+        hasmap[array[i]] = i
     }
-    return [];
+return []
+
+
 }
