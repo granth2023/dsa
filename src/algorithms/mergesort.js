@@ -186,39 +186,73 @@ function mergeSort(arr) {
 
 // }
 
-function mergeSortPhotos(photos){
-  if(photos.length <= 1){
-    return photos
+// function mergeSortPhotos(photos){
+//   if(photos.length <= 1){
+//     return photos
+//   }
+
+//   let midpoint = math.floor(photos.length / 2)
+//   const left = photos.slice(0,midpoint)
+//   const right = photos.slice(midpoint)
+
+//   return merge((mergeSortPhotos(left), mergeSortPhotos(right)))
+// }
+
+// function merge(left, right){
+//   let result = [];
+//   let leftIndex = 0;
+//   let rightIndex = 0;
+
+//   while(leftIndex < left.length && rightIndex < right.length){
+//     if(left[leftIndex].timestamp < right[rightIndex].timestamp){
+//       result.push(left[leftIndex])
+//       leftIndex++;
+//     } else{
+//       result.push(right[rightIndex])
+//       rightIndex++;
+//     }
+
+//     return result.concat(left.slice(leftIndex)).concat(right.slice(rightIndex))
+
+//   }
+
+
+
+// }
+
+function msi(items){
+  if( items.length <= 1){
+    return items
   }
 
-  let midpoint = math.floor(photos.length / 2)
-  const left = photos.slice(0,midpoint)
-  const right = photos.slice(midpoint)
+  let midpoint = Math.floor(items.length /2)
+  let left = items.slice(0, midpoint)
+  let right = items.slice(midpoint)
 
-  return merge((mergeSortPhotos(left), mergeSortPhotos(right)))
+  return merge((mgs(left), mgs(right)))
+
 }
 
-function merge(left, right){
-  let result = [];
-  let leftIndex = 0;
-  let rightIndex = 0;
+function merge(left,right){
+    let result = []
+    let leftIndex = 0
+    let rightIndex =0;
 
-  while(leftIndex < left.length && rightIndex < right.length){
-    if(left[leftIndex].timestamp < right[rightIndex].timestamp){
-      result.push(left[leftIndex])
-      leftIndex++;
-    } else{
-      result.push(right[rightIndex])
-      rightIndex++;
+
+    while( leftIndex< left.length && rightIndex< right.length){
+      if(left[leftIndex]< right[rightIndex]){
+        result.push(left[leftIndex])
+        leftIndex++
+      }else{
+        result.push(right[rightIndex])
+        rightIndex++;
+      }
     }
-
     return result.concat(left.slice(leftIndex)).concat(right.slice(rightIndex))
 
-  }
-
-
-
 }
+
+
 
 
 
