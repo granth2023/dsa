@@ -405,21 +405,38 @@
 // console.log(findFirstOccurrence(newArr, 2))
 
 
-function binary(arr, x){
+// function binary(arr, x){
+//   let start =0
+//   let end = arr.length - 1
+
+//   while(start<=end){
+//     let midpoint = Math.floor((start + end)/2)
+//     if(midpoint[i]==x){
+//       return x
+//     } else if(midpoint[i]> x){
+//       end = midpoint -1
+//     }else{
+//       start = midpoint +1
+//     }
+
+
+//   }
+//   return -1
+// }
+
+function binary(arr,x){
   let start =0
   let end = arr.length - 1
 
   while(start<=end){
-    let midpoint = Math.floor((start + end)/2)
-    if(midpoint[i]==x){
-      return x
-    } else if(midpoint[i]> x){
+    let midpoint = math.floor((start + end)/2)
+    if( array[midpoint]== x){
+      return midpoint
+    } else if( array[midpoint] > x){
       end = midpoint -1
-    }else{
-      start = midpoint +1
+    }else {
+      start = midpoint + 1
     }
+    return -1
 
-
-  }
-  return -1
-}
+}}
