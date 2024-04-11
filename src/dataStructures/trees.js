@@ -45,21 +45,38 @@
 // }
 
 
-class TreeTrunk{
+// class TreeTrunk{
+//     constructor(val = 0, left = null, right = null){
+//         this.val = val
+//         this.left = left
+//         this.right = right
+//     }
+// }
+// const maxDepth = (root) => {
+//     if(!root){
+//         return 0
+
+//     }
+
+//     const leftDepth = maxDepth(root.left)
+//     const rightDepth = maxDepth(root.right)
+//     return Math.max(leftDepth, rightDepth)+ 1
+
+// }
+
+
+class Tree{
     constructor(val = 0, left = null, right = null){
         this.val = val
-        this.left = left
+        this.left=left
         this.right = right
     }
 }
-const maxDepth = (root) => {
+const maxDepth = (root) =>{
     if(!root){
         return 0
-
     }
-
-    const leftDepth = maxDepth(root.left)
-    const rightDepth = maxDepth(root.right)
-    return Math.max(leftDepth, rightDepth)+ 1
-
+    let leftDepth = maxDepth(root.left)
+    let rightDepth= maxDepth(root.right)
+    Math.max(leftDepth, rightDepth)+ 1
 }
