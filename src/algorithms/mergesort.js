@@ -220,38 +220,38 @@ function mergeSort(arr) {
 
 // }
 
-function msi(items){
-  if( items.length <= 1){
-    return items
+// 
+function mergeThings(things){
+  if(things.length <= 1){
+    return things; 
   }
 
-  const midpoint = Math.floor(items.length /2)
-  const left = items.slice(0, midpoint)
-  const right = items.slice(midpoint)
+  const midpoint = math.floor(things.length / 2);
+  const left = things.splice(0,midpoint)
+  const right = things.splice(midpoint)
 
-  const leftSorted = msi(left)
-  const rightSorted = msi(right)
 
-  return merge(leftSorted, rightSorted)
+  const leftSorted= mergeThings(left)
+  const rightSorted = mergeThings(right)
 
+  return mergeThings(leftSorted,rightSorted)
 }
 
-function merge(left,right){
-    let result = []
-    let leftIndex = 0
-    let rightIndex =0;
+function merge(left, right){
+  let result = []
+  let leftIndex = 0 
+  let rightIndex = 0
 
-
-    while( leftIndex< left.length && rightIndex< right.length){
-      if(left[leftIndex]< right[rightIndex]){
-        result.push(left[leftIndex])
-        leftIndex++
-      }else{
-        result.push(right[rightIndex])
-        rightIndex++;
+      while(leftIndex < left.length && rightIndex < right.length){
+        if( left[leftIndex]< right[RightIndex]){
+          result.push(left[leftIndex])
+          leftIndex++
+        }else{
+          result.push(right[rightIndex])
+          rightIndex++;
+        }
       }
-    }
-    return result.concat(left.slice(leftIndex)).concat(right.slice(rightIndex))
+      result.concat(left.splice(leftIndex)).concat(right.splice(rightIndex))
 
 }
 
