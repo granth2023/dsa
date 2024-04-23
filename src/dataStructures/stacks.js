@@ -192,3 +192,24 @@ console.log(myStack.pop());
 console.log(myStack.peek())
 console.log(myStack.isEmpty());
 
+class Queue {
+    constructor(){
+        this.items = [];
+    }
+
+    enqueue(element){
+        this.items.push(element);
+    }
+
+    dequeue(){
+        if(this.isEmpty())
+            return "underflow";
+        return this.items.shift();
+    }
+    front(){
+        return this.item[0]
+    }
+    isEmpty(){
+        return this.items.length===0;
+    }
+}
