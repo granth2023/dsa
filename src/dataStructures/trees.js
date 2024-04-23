@@ -80,3 +80,5 @@ const maxDepth = (root) =>{
     let rightDepth= maxDepth(root.right)
     Math.max(leftDepth, rightDepth)+ 1
 }
+
+//treemax, merge and the left right merge index and splice, binary start and end, hashmap, has the empty object and the empty array, 
