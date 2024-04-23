@@ -130,3 +130,65 @@ function temeratureGet(temperatures){
     }
     return answer;
 }
+
+//create a stack class 
+
+// one class, one constructor, a push, a pop. a peek, an isempty, 7 this dot items, an empy array, 3 items dot lenght, 2 0's a minus 1, a underflow, 3 returns 
+
+// class Stack {
+//     constructor(){
+//         this.items = [];
+//     }
+
+//     push(element){
+//         this.items.push(element);
+//     }
+
+//     pop(element){
+//         if( this.items.length == 0){
+//             return 'underflow'
+//             return this.items.pop()
+//         }
+//     }
+//         peek(){
+//             return this.items[this.items.length -1]
+//         }
+//         isEmpty(){
+//             return this.items.length ===0;
+//         }
+    //}
+//what are some other methods to include? 
+
+
+class Stacks{
+    constructor(){
+        this.items = []
+    }
+    push(element){
+         this.items.push(element)
+    }
+
+    pop() {
+        if(this.items.length == 0)
+            return 'underflow'
+        return this.items.pop()
+        }
+    peek() {
+        return this.items[this.items.length-1]
+    }
+    isEmpty(){
+        return this.items.length === 0;
+    }
+        
+}
+let myStack = new Stacks();
+console.log(myStack.isEmpty());
+
+myStack.push(10);
+myStack.push(20)
+console.log(myStack.peek())
+
+console.log(myStack.pop());
+console.log(myStack.peek())
+console.log(myStack.isEmpty());
+
