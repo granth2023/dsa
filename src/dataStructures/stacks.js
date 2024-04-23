@@ -192,6 +192,9 @@ console.log(myStack.pop());
 console.log(myStack.peek())
 console.log(myStack.isEmpty());
 
+
+//queue mindset -- push, and shift! 
+
 class Queue {
     constructor(){
         this.items = [];
@@ -212,4 +215,29 @@ class Queue {
     isEmpty(){
         return this.items.length===0;
     }
+}
+
+class set{
+    constructor(){
+        this.items = {}
+
+    }
+    add(element){
+        if(!this.has(element)){
+            this.items[element] = true;
+            return true
+    }
+    return false;
+
+}
+    has(element){
+        return Object.prototype.hasOwnProperty.call(this.items, element)
+    }
+    delete(element){
+        if(this.has(element)){
+            delete this.items[element]
+            return true;
+    }
+    return false;
+}
 }
