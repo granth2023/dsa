@@ -223,6 +223,7 @@ class set{
 
     }
     add(element){
+        //if element isn't there then add it
         if(!this.has(element)){
             this.items[element] = true;
             return true
@@ -231,9 +232,11 @@ class set{
 
 }
     has(element){
+        //hand wave: class for all objects method using a method to compare if element is already present 
         return Object.prototype.hasOwnProperty.call(this.items, element)
     }
     delete(element){
+        //if element is there then remove
         if(this.has(element)){
             delete this.items[element]
             return true;
@@ -241,3 +244,171 @@ class set{
     return false;
 }
 }
+
+
+//
+
+// Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+
+//2 variables, one function, one new Set, one for loop, one if, 2 return, one hadd, one add, 3 uses of individual piece of whole, one true one false 
+
+// const  containDupes =    function(nums){
+
+//     const seen =  new Set()
+//        for(let num of nums){
+//        if(seen.has(num)){
+//         return true
+//        }
+//        seen.add(num)
+//     }
+//     return false 
+
+
+// }
+
+const hasDupes = function(nums) {
+    const seen = new Set();
+
+    for(let num of nums){
+        if(seen.has(num)){
+            return true
+        }
+        seen.add(num)
+    }
+
+    return false
+}
+nums = [4,5,6,7,8,9,10,11,12,13,14,14]
+
+var findAllDuplicates = function(nums) {
+    let counts = new Map();
+    let duplicates = [];
+
+    // Count each number's occurrences
+    for (let num of nums) {
+        if (counts.has(num)) {
+            counts.set(num, counts.get(num) + 1);
+        } else {
+            counts.set(num, 1);
+        }
+    }
+
+    // Collect numbers that appear more than once
+    for (let [num, count] of counts) {
+        if (count > 1) {
+            duplicates.push(num);
+        }
+    }
+
+    return duplicates;
+};
+//Implement Stack using Queues
+//MyStack stack = new MyStack();
+// stack.push(1);
+// stack.push(2);  
+// stack.top();   // returns 2
+// stack.pop();   // returns 2
+// stack.empty(); // returns false
+
+// a calss, constructor, 2 empty array, push, pop, top empty, shift, temp, while, first empty array greater then zero, 2 this.queie1.shift 2 thisqueue2.push,  [0], this.queue1.lenght two times, one === 0
+
+// class MyStack{
+//     constructor(){
+//         this.queue1 = []
+//         this.queue2 = []
+
+//     }
+
+//     push(x){
+//             //missing pushing x to queue 2 
+//         while(this.queue1.length > 0){
+//             this.queue2.push(this.queue1.shift())
+
+
+
+//         }
+//         let temp = this.queue1
+//         this.queue1 = this.queue2
+//         this.queue2 = temp
+
+//     }
+
+//     pop(){
+//         // return shift off queue 1 
+
+//     }
+//     top(){
+//         return this.queue1[0]
+//     }
+//     empty(){
+//         return this.queue1.length === 0
+
+//     }
+    
+// }
+
+class stackViaQueue{
+    constructor(){
+        this.queue1 =[]
+        this.queue2 = []
+    }
+
+    push(x){
+        this.queue2.push(x)
+        while(this.queue1.length >0){
+            this.queue2.push(this.queueA.shift())
+        }
+        let temp = this.queue1   
+        this.queue1 = this.queue2
+        this.queue2 = temp
+
+    }
+       
+
+    pop(){
+        return this.queue1.shift();
+    }
+
+    top(){
+        return this.queue1[0]
+    }
+
+    isEmpty(){
+        return this.queueA.length === 0
+    }
+}
+
+
+
+class Stacky {
+    constructor(){
+        this.items =[];
+
+    }
+
+    push(element){
+        this.items.push(element)
+
+    }
+    pop(){
+        if(this.items.length == 0){
+            return 'underflow';
+        }
+        return this.items.pop()
+        
+    }
+    isEmpty(){
+        return this.items.length === 0;
+    }
+    peek(){
+        return this.items[this.items.length-1]
+    }
+}
+
+
+
+
+class 
+
+
+//UPDATE 
