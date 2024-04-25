@@ -134,3 +134,31 @@ class Tree {
         return root  
 
     }
+
+//how do i determine if a tree is symmetrical? 
+// declare a tree node class
+//create 2 functions -- the first handles the root, an returns the secon dfunctions calling the root on left and right
+//the second function passes the values and we use 3 if statements accounting for && || of null value and when to return false -- then recursively call this function twice  --> 
+
+
+// class treeBase{
+//     constructor( val = 0, left = 0, right = 0){
+//         this.val = val
+//         this.left = left;
+//         this.right = right;
+//     }
+// }
+
+// function isSymmetric(root){
+//     if(root == null)return true; 
+//     return isMirror(root.left, root.right)
+// }
+
+// function isMirror(left, right) {
+//     if((root.left == null) && (root.right == null)) return true;
+//     if((root.left == null) || (root.right == null)) return false;
+//     if(root.left !== root.right) return true;
+//     return isMirror((left.left, right.right) && (left.right, right.left) )
+
+
+// }
