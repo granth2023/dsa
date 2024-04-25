@@ -2,4 +2,3 @@
 
 //Depth-First Search goes like a column -- down all the way to the left and then scans to the right and snakes back up, and then across until it goe down left first 
 
-//
