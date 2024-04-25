@@ -162,3 +162,52 @@ class Tree {
 
 
 // }
+
+
+class trees{
+    constructor(val = 0, left = null, right = null){
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+}
+
+// function isSymmetric(root){
+//     if(root == null)
+//         return true;
+//         return isMirror(root.left, root.right);
+// }
+
+// function isMirror(left,right){
+//     if( left == null && right == null) return true;
+//     if( let == null || right == null ) return false;
+//     if( left.val !== right.val) return false;
+// return isMirror(left.)
+
+// }
+
+//symmetry? how many funcitons do we need? how many times do we call 2nd function?
+class trees{
+    //create possible tree
+    constructor(val = 0, left = null, right = null){
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+}
+
+function isSymmetric(root){
+  //how do we return if null is root? what do we run to see if there is mirror on children? 
+    if(root == null) return true;
+    return isMirror(root.left, root.right)
+}
+function isMirror(left, right){
+    // is it mirroring when either are null or have different values? 
+    if( left == null && right == null)return true; 
+    if( left == null || right == null)return false;
+    if( left.val !== right.val) return false;
+    //how do we compare the mirror? think of a stack? 
+    return isMirror(left.left, right.right) && isMirror(left.right, right.left);
+}
+
+//binary tree traversal 
